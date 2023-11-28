@@ -1,30 +1,24 @@
 <head>
-    <title>Prologue - Creative Multipurpose Responsive HTML5 Template</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width">
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-    <!-- Start Include All CSS -->
-    <link rel="stylesheet" href="theme/assets/css/bootstrap.css"/>
-    <link rel="stylesheet" href="theme/assets/css/animate.css"/>
-    <link rel="stylesheet" href="theme/assets/css/stroke-gap-icons.css"/>
-    <link rel="stylesheet" href="theme/assets/css/icofont.css"/>
-    <link rel="stylesheet" href="theme/assets/css/flaticon.css"/>
-    <link rel="stylesheet" href="theme/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="theme/assets/css/owl.theme.default.min.css">
-    <link rel="stylesheet" href="theme/assets/css/slick.css">
-    <link rel="stylesheet" href="theme/assets/css/lightcase.css">
-    <link rel="stylesheet" href="theme/assets/css/lightslider.css">
+	<title>Luísa Macêdo Arquitetura</title>
 
-    <!-- Revolution Slider Setting CSS -->
-    <link rel="stylesheet" type="text/css" href="theme/assets/css/settings.css">
+	<!--Favicon-->
+	<link rel="shortcut icon" href="images/favicon.png">
+	<link rel="icon" href="images/favicon.png">
 
-    <link rel="stylesheet" href="theme/assets/css/preset.css"/>
-    <link rel="stylesheet" href="theme/assets/css/ignore_for_wp.css"/>
-    <link rel="stylesheet" href="theme/assets/css/theme.css"/>
-    <link rel="stylesheet" href="theme/assets/css/responsive.css"/>
-    <!-- End Include All CSS -->
+	<!--Stylesheets-->
+	<link rel="stylesheet" href="theme/css/bootstrap.css">
+	<link rel="stylesheet" href="theme/plugins/revolution/css/settings.css">
+	<link rel="stylesheet" href="theme/plugins/revolution/css/layers.css">
+	<link rel="stylesheet" href="theme/plugins/revolution/css/navigation.css">
+	<link rel="stylesheet" href="theme/css/style.css">
+	<link rel="stylesheet" href="theme/css/responsive.css">
+	<link rel="stylesheet" href="theme/css/owl.css">
+	<link rel="stylesheet" href="theme/css/owl.default.css">
 
-    <!-- Favicon Icon -->
-    <link rel="icon"  type="image/png" href="theme/assets/images/favicon.png">
-    <!-- Favicon Icon -->
+	<!--Color Themes-->
+	<link rel="stylesheet" href="theme/css/default-theme.css">
 </head>

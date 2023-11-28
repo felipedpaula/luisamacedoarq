@@ -5,17 +5,19 @@
     <!-- END HEAD -->
 
     <body>
-        <!-- HEADER -->
-        @include('site.components.header')
-        <!-- END HEADER -->
+        <div class="page-wrapper">
+            <!-- HEADER -->
+            @include('site.components.header')
+            <!-- END HEADER -->
 
-        <!-- CONTENT -->
-        @yield('content')
-        <!-- END CONTENT -->
+            <!-- CONTENT -->
+            @yield('content')
+            <!-- END CONTENT -->
 
-        <!-- FOOTER -->
-        @include('site.components.footer')
-        <!-- FOOTER -->
+            <!-- FOOTER -->
+            @include('site.components.footer')
+            <!-- FOOTER -->
+        </div>
     </body>
 
 </html>

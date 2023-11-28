@@ -1,945 +1,352 @@
 @extends('site.layouts.site-default')
 
 @section('content')
-    <!-- Hero Slider Start -->
-    <section class="slider_01">
-        <div class="rev_slider_wrapper">
-            <div id="rev_slider_1" class="rev_slider fullwidthabanner" style="display:none;" data-version="5.4.1">
+   <!--Main Slider-->
+    <section class="main-slider">
+        <div class="rev_slider_wrapper fullwidthbanner-container"  id="rev_slider_one_wrapper" data-source="gallery">
+            <div class="rev_slider fullwidthabanner" id="rev_slider_one" data-version="5.4.1">
                 <ul>
-                    <li data-index="rs-3046" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <div class="tp-caption rs-parallaxlevel-1"
-                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                        {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-1.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="theme/images/main-slider/image-1.jpg"> 
 
-                            data-type="image"
-                            data-x="left"
-                            data-y="middle"
-                            data-hoffset="0"
-                            data-voffset="['-33','-33','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                        ><img src="theme/assets/images/slider/shape_1.png" alt="App Store" width="359" height="187"></div>
-                        <div class="tp-caption sl1_subtitle ws_nowrap"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
-
-                             data-y="['middle']"
-                             data-voffset="['-69','-69','-69','-69']"
-
-                             data-fontsize="['12','12','12','12']"
-                             data-fontweight="400"
-                             data-lineheight="['26','26','26','26']"
-                             data-width="['500','500','100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#959595']"
-
-                             data-type="text"
-                             data-responsive_offset="on"
-
-                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             >We bulid products that helps businesses manage</div>
-                        <div class="tp-caption ws_nowrap"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['-3', '-3', '0', '0']"
-
-                             data-y="['middle']"
-                             data-voffset="['0','0','0','0']"
-
-                             data-fontsize="['48','48','48','28']"
-                             data-fontweight="600"
-                             data-lineheight="['58', '58', '58', '38']"
-                             data-width="['500','540','100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#333333']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"power2.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             >Empowering startups and <span class="fw_300">freelancers</span>
+                        <div class="tp-caption" 
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingtop="[0,0,0,0]"
+                        data-responsive_offset="on"
+                        data-type="text"
+                        data-height="none"
+                        data-width="['650','650','550','420']"
+                        data-whitespace="normal"
+                        data-hoffset="['15','15','15','15']"
+                        data-voffset="['-40','-80','-80','-75']"
+                        data-x="['left','left','left','left']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-textalign="['top','top','top','top']"
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h2>We create living, breathing structures that inspire</h2>
                         </div>
-                        <div class="tp-caption ws_nowrap wb_all hide_br padding_mobile"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
 
-                             data-y="['middle']"
-                             data-voffset="['116','116','116','116']"
-
-                             data-fontsize="['14','14','14','14']"
-                             data-fontweight="['400', '400', '400', '400']"
-                             data-lineheight="['26']"
-                             data-width="['570','400','100%','100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#959595']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
-                             {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,30]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,30]"
-
-                             >
-                                To Business grow-up onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br/>
-                                dolore magna aliqua. Quis ipsum  suspendisse ultrices gravida. Risus<br/>
-                                commodo viverra maecenas accumsan lacus vel facilisis.
+                        <div class="tp-caption" 
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingtop="[0,0,0,0]"
+                        data-responsive_offset="on"
+                        data-type="text"
+                        data-height="none"
+                        data-width="['600','650','650','450']"
+                        data-whitespace="normal"
+                        data-hoffset="['15','15','15','15']"
+                        data-voffset="['65','20','15','10']"
+                        data-x="['left','left','left','left']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-textalign="['top','top','top','top']"
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text">Together we ensure that each building fulfills their needs and goals, as unique manifestations of brand, mission and values</div>
                         </div>
-                        <div class="tp-caption tp-resizeme"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
 
-                             data-y="['middle']"
-                             data-voffset="['205','205','205','205']"
-
-                             data-fontsize="['16','16','16','16']"
-                             data-fontweight="600"
-                             data-lineheight="['16']"
-                             data-width="['100', '100', '100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#01d85f']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
-                             {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             ><a href="about_us.html" class="learnmore_link_2">Learn More</a>
+                        <div class="tp-caption tp-resizeme" 
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingtop="[0,0,0,0]"
+                        data-responsive_offset="on"
+                        data-type="text"
+                        data-height="none"
+                        data-width="['750','750','550','420']"
+                        data-whitespace="normal"
+                        data-hoffset="['15','15','15','15']"
+                        data-voffset="['145','110','100','100']"
+                        data-x="['left','left','left','left']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-textalign="['top','top','top','top']"
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <a href="about.html" class="theme-btn btn-style-three">learn more</a>
                         </div>
-                        <div class="tp-caption d-md-none d-sm-none d-xs-none d-lg-block"
-                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                        {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-                            data-type="image"
-                            data-x="right"
-                            data-y="top"
-                            data-hoffset="['-44','-44','0','0']"
-                            data-voffset="['90','90','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                            data-visibility="['on', 'on', 'off', 'off']"
-
-                        ><img src="theme/assets/images/slider/shape_2.png" alt="App Store"></div>
-                        <div class="tp-caption rs-parallaxlevel-1 d-md-none d-sm-none d-xs-none d-lg-block"
-                            data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
-
-                            data-type="image"
-                            data-x="right"
-                            data-y="bottom"
-                            data-hoffset="['87','87','0','0']"
-                            data-voffset="['-146','-146','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                            data-visibility="['on', 'on', 'off', 'off']"
-
-                        ><img src="theme/assets/images/slider/6.png" alt="App Store" width="398" height="694"></div>
                     </li>
-                    <li data-index="rs-3047" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <div class="tp-caption rs-parallaxlevel-1"
-                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                        {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
 
-                            data-type="image"
-                            data-x="left"
-                            data-y="middle"
-                            data-hoffset="0"
-                            data-voffset="['-33','-33','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
+                    <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1688" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="images/main-slider/image-2.jpg" data-title="Slide Title" data-transition="parallaxvertical">
+                        <img alt="" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="theme/images/main-slider/image-2.jpg"> 
 
-                        ><img src="theme/assets/images/slider/shape_1.png" alt="App Store" width="359" height="187"></div>
-                        <div class="tp-caption sl1_subtitle ws_nowrap"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
-
-                             data-y="['middle']"
-                             data-voffset="['-69','-69','-69','-69']"
-
-                             data-fontsize="['12','12','12','12']"
-                             data-fontweight="400"
-                             data-lineheight="['26','26','26','26']"
-                             data-width="['500','500','100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#959595']"
-
-                             data-type="text"
-                             data-responsive_offset="on"
-
-                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             >We bulid products that helps businesses manage</div>
-                        <div class="tp-caption ws_nowrap"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['-3', '-3', '0', '0']"
-
-                             data-y="['middle']"
-                             data-voffset="['0','0','0','0']"
-
-                             data-fontsize="['48','48','48','28']"
-                             data-fontweight="600"
-                             data-lineheight="['58', '58', '58', '38']"
-                             data-width="['500','540','100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#333333']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"power2.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             >Augmentation startups and <span class="fw_300">freelancers</span>
+                        <div class="tp-caption" 
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingtop="[0,0,0,0]"
+                        data-responsive_offset="on"
+                        data-type="text"
+                        data-height="none"
+                        data-width="['750','750','550','420']"
+                        data-whitespace="normal"
+                        data-hoffset="['15','15','15','15']"
+                        data-voffset="['-40','-80','-80','-75']"
+                        data-x="['left','left','left','left']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-textalign="['top','top','top','top']"
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <h2 class="alternate">We design spaces that uplift the people who experience them</h2>
                         </div>
-                        <div class="tp-caption ws_nowrap wb_all hide_br padding_mobile"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
 
-                             data-y="['middle']"
-                             data-voffset="['116','116','116','116']"
-
-                             data-fontsize="['14','14','14','14']"
-                             data-fontweight="['400', '400', '400', '400']"
-                             data-lineheight="['26']"
-                             data-width="['570','400','100%','100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#959595']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
-                             {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,30]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,30]"
-
-                             >
-                                To Business grow-up onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br/>
-                                dolore magna aliqua. Quis ipsum  suspendisse ultrices gravida. Risus<br/>
-                                commodo viverra maecenas accumsan lacus vel facilisis.
+                        <div class="tp-caption" 
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingtop="[0,0,0,0]"
+                        data-responsive_offset="on"
+                        data-type="text"
+                        data-height="none"
+                        data-width="['600','650','650','450']"
+                        data-whitespace="normal"
+                        data-hoffset="['15','15','15','15']"
+                        data-voffset="['65','20','15','10']"
+                        data-x="['left','left','left','left']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-textalign="['top','top','top','top']"
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <div class="text alternate">Interiors are the essential settings of life, shaping how people work, play and learn</div>
                         </div>
-                        <div class="tp-caption tp-resizeme"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
-
-                             data-y="['middle']"
-                             data-voffset="['205','205','205','205']"
-
-                             data-fontsize="['16','16','16','16']"
-                             data-fontweight="600"
-                             data-lineheight="['16']"
-                             data-width="['100', '100', '100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#01d85f']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
-                             {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             ><a href="about_us.html" class="learnmore_link_2">Learn More</a>
+                        
+                        <div class="tp-caption tp-resizeme" 
+                        data-paddingbottom="[0,0,0,0]"
+                        data-paddingleft="[0,0,0,0]"
+                        data-paddingright="[0,0,0,0]"
+                        data-paddingtop="[0,0,0,0]"
+                        data-responsive_offset="on"
+                        data-type="text"
+                        data-height="none"
+                        data-width="['550','550','550','420']"
+                        data-whitespace="normal"
+                        data-hoffset="['15','15','15','15']"
+                        data-voffset="['145','110','100','100']"
+                        data-x="['left','left','left','left']"
+                        data-y="['middle','middle','middle','middle']"
+                        data-textalign="['top','top','top','top']"
+                        data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
+                            <a href="about.html" class="theme-btn btn-style-three">learn more</a>
                         </div>
-                        <div class="tp-caption d-md-none d-sm-none d-xs-none d-lg-block"
-                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                        {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
 
-                            data-type="image"
-                            data-x="right"
-                            data-y="top"
-                            data-hoffset="['-44','-44','0','0']"
-                            data-voffset="['90','90','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                            data-visibility="['on', 'on', 'off', 'off']"
-
-                        ><img src="theme/assets/images/slider/shape_2.png" alt="App Store"></div>
-                        <div class="tp-caption rs-parallaxlevel-1 d-md-none d-sm-none d-xs-none d-lg-block"
-                            data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
-
-                            data-type="image"
-                            data-x="right"
-                            data-y="bottom"
-                            data-hoffset="['87','87','0','0']"
-                            data-voffset="['-146','-146','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                            data-visibility="['on', 'on', 'off', 'off']"
-
-                        ><img src="theme/assets/images/slider/6.png" alt="App Store" width="398" height="694"></div>
-                    </li>
-                    <li data-index="rs-3048" data-transition="fadetotopfadefrombottom" data-slotamount="default" data-hideafterloop="0" data-hideslideonmobile="off"  data-easein="Power3.easeInOut" data-easeout="Power3.easeInOut" data-masterspeed="1500"  data-thumb=""  data-rotate="0"  data-saveperformance="off"  data-title="" data-param1="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-param10="" data-description="">
-                        <div class="tp-caption rs-parallaxlevel-1"
-                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                        {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-                            data-type="image"
-                            data-x="left"
-                            data-y="middle"
-                            data-hoffset="0"
-                            data-voffset="['-33','-33','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                        ><img src="theme/assets/images/slider/shape_1.png" alt="App Store" width="359" height="187"></div>
-                        <div class="tp-caption sl1_subtitle ws_nowrap"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
-
-                             data-y="['middle']"
-                             data-voffset="['-69','-69','-69','-69']"
-
-                             data-fontsize="['12','12','12','12']"
-                             data-fontweight="400"
-                             data-lineheight="['26','26','26','26']"
-                             data-width="['500','500','100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#959595']"
-
-                             data-type="text"
-                             data-responsive_offset="on"
-
-                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:[-100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","to":"o:1;","ease":"power3.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             >We bulid products that helps businesses manage</div>
-                        <div class="tp-caption ws_nowrap"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['-3', '-3', '0', '0']"
-
-                             data-y="['middle']"
-                             data-voffset="['0','0','0','0']"
-
-                             data-fontsize="['48','48','48','28']"
-                             data-fontweight="600"
-                             data-lineheight="['58', '58', '58', '38']"
-                             data-width="['500','540','100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#333333']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":1000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","mask":"x:0px;y:[100%];s:inherit;e:inherit;","to":"o:1;","ease":"power2.inOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             >Nourishments startups and <span class="fw_300">freelancers</span>
-                        </div>
-                        <div class="tp-caption ws_nowrap wb_all hide_br padding_mobile"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
-
-                             data-y="['middle']"
-                             data-voffset="['116','116','116','116']"
-
-                             data-fontsize="['14','14','14','14']"
-                             data-fontweight="['400', '400', '400', '400']"
-                             data-lineheight="['26']"
-                             data-width="['570','400','100%','100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#959595']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
-                             {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,30]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,30]"
-
-                             >
-                                To Business grow-up onsectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et<br/>
-                                dolore magna aliqua. Quis ipsum  suspendisse ultrices gravida. Risus<br/>
-                                commodo viverra maecenas accumsan lacus vel facilisis.
-                        </div>
-                        <div class="tp-caption tp-resizeme"
-                             data-x="['left', 'left', 'center', 'center']"
-                             data-hoffset="['0']"
-
-                             data-y="['middle']"
-                             data-voffset="['205','205','205','205']"
-
-                             data-fontsize="['16','16','16','16']"
-                             data-fontweight="600"
-                             data-lineheight="['16']"
-                             data-width="['100', '100', '100%', '100%']"
-                             data-height="['auto']"
-                             data-whitesapce="['normal']"
-                             data-color="['#01d85f']"
-
-                             data-type="text"
-                             data-responsive_offset="off"
-
-                             data-frames='[{"delay":0,"speed":2000,"frame":"0","from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"Power4.easeInOut"},
-                             {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"Power3.easeInOut"}]'
-
-                             data-textAlign="['left', 'left', 'center', 'center']"
-                             data-paddingtop="[0,0,0,0]"
-                             data-paddingright="[0,0,0,25]"
-                             data-paddingbottom="[0,0,0,0]"
-                             data-paddingleft="[0,0,0,25]"
-
-                             ><a href="about_us.html" class="learnmore_link_2">Learn More</a>
-                        </div>
-                        <div class="tp-caption d-md-none d-sm-none d-xs-none d-lg-block"
-                            data-frames='[{"delay":0,"speed":1500,"frame":"0","from":"z:0;rX:0;rY:0;rZ:0;sX:0.9;sY:0.9;skX:0;skY:0;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                        {"delay":"wait","speed":300,"frame":"999","to":"auto:auto;","ease":"power3.inOut"}]'
-
-                            data-type="image"
-                            data-x="right"
-                            data-y="top"
-                            data-hoffset="['-44','-44','0','0']"
-                            data-voffset="['90','90','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                            data-visibility="['on', 'on', 'off', 'off']"
-
-                        ><img src="theme/assets/images/slider/shape_2.png" alt="App Store"></div>
-                        <div class="tp-caption rs-parallaxlevel-1 d-md-none d-sm-none d-xs-none d-lg-block"
-                            data-frames='[{"delay":0,"speed":300,"frame":"0","from":"y:50px;opacity:0;","to":"o:1;","ease":"power3.inOut"},
-                                    {"delay":"wait","speed":300,"frame":"999","to":"opacity:0;","ease":"power3.inOut"}]'
-
-                            data-type="image"
-                            data-x="right"
-                            data-y="bottom"
-                            data-hoffset="['87','87','0','0']"
-                            data-voffset="['-146','-146','0','0']"
-                            data-width="['auto']"
-                            data-height="['auto']"
-
-                            data-visibility="['on', 'on', 'off', 'off']"
-
-                        ><img src="theme/assets/images/slider/6.png" alt="App Store" width="398" height="694"></div>
                     </li>
                 </ul>
             </div>
         </div>
-        <svg preserveAspectRatio="none" viewBox="0 0 100 100"><polygon points="100,100 100,0 0,100" opacity="1"></polygon></svg>
     </section>
-    <!-- Hero Slider End" -->
+    <!--End Main Slider-->
 
-    <!-- About Section Start -->
-    <section class="about_section_01">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="ab_img">
-                        <img src="theme/assets/images/home_01/1.jpg" alt=""/>
+    <!--About Section-->
+    <section class="about-section-home">
+        <div class="auto-container">
+            <div class="row clearfix">
+                <div class="about-details col-md-12 col-sm-12 col-xs-12">
+                    <div class="inner-column">
+                        <div class="sec-title style-two">
+                            <div class="sub-title">From undulating skyscrapers to marvelous museums</div>
+                            <h2>About <span>Aizen</span></h2>
+                            <div class="separator"></div>
+                        </div>
+                        <div class="text">
+                            <p>Building design at its visionary best engages, exhilarates, and inspires. It possesses a quality—almost indescribable—that embodies design ingenuity, connection to place, and, above all, imagination. But today’s architectural monuments aren’t meant only to be admired from afar.</p>
+                            <p>Together they conceived an asymmetrical structure clad in a skin of LED-illuminated glass-and-steel bricks, which every evening gives Icelanders a show as dazzling as the northern lights.</p>
+                        </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-4 noPaddingRight">
-                    <div class="ab_content">
-                        <h5 class="sub_title">Helping ambition brands growing</h5>
-                        <h2 class="sec_title">
-                            Business hand in hand with our technology. We <span class="fw_400 td_underline">design spaces</span> will make you fall in love with <span class="fw_400 td_underline secondary_color">work again</span>.
-                        </h2>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                        </p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <a href="#" class="fw_500">ut labore et dolore magna</a> aliqua.
-                            Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-12 col-lg-4">
-                    <div class="ab_content_2 pdl15">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                            dolor in <span class="fw_500 td_underline">reprehenderit in voluptate velit esse cillum dolore eu</span> fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-                            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit
-                            voluptatem accusantium doloremque laudantium, totam rem aperiam.
-                        </p>
-                        <img src="theme/assets/images/home_01/2.png" alt=""/>
+                <div class="about-details-image col-md-6 col-sm-12 col-xs-12">
+                    <div class="image">
+                        <img src="theme/images/resource/about.jpg" alt="">
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <!-- About Section End -->
+    <!--End About Section-->
 
-    <!-- Features Section Start -->
-    <section class="features_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="icon_box_01">
-                        <div class="i_div">
-                            <svg height="37" viewBox="0 0 21 21" width="37" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="matrix(-1 0 0 1 17.335 3)">
-                            <path d="m12.835.5v5h-5" transform="matrix(1 0 0 -1 0 6)"/>
-                            <path d="m7.006.429v8.485l5.657 5.657" transform="matrix(.70710678 .70710678 -.70710678 .70710678 8.183906 -4.757696)"/>
-                            <path d="m.835 4.5 4-4" transform="matrix(-1 0 0 1 5.669 0)"/>
-                            </g>
-                            </svg>
-                        </div>
-                        <h3><a href="service_details.html">UX recherche</a></h3>
-                        <h5>data collection</h5>
-                        <p>
-                            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.
-                        </p>
+    <!--Project Section-->
+    <section class="project-section-home">
+        <div class="auto-container">
+            <div class="sec-title style-two centered">
+                <h2>Our <span>Projects</span></h2>
+                <div class="separator"></div>
+            </div>
+            <div class="projects-carousel owl-carousel owl-theme">
+                <div class="item">
+                    <div><img src="theme/images/resource/project-1.jpg" alt=""></div>
+                    <div class="info">
+                        <h3><a href="project-single.html">Aqua Residence</a></h3>
+                        <h4><a href="project-single.html">Architecture</a></h4>
+                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="icon_box_01">
-                        <div class="i_div">
-                            <svg height="35" viewBox="0 0 21 21" width="35" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(3 3)">
-                            <path d="m.5.5v12c0 1.1045695.8954305 2 2 2h11.5"/>
-                            <path d="m3.5 8.5v3"/>
-                            <path d="m7.5 5.5v6"/>
-                            <path d="m11.5 2.5v9"/>
-                            </g>
-                            </svg>
-                        </div>
-                        <h3><a href="service_details.html">Branding design</a></h3>
-                        <h5>identification</h5>
-                        <p>
-                            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.
-                        </p>
+                <div class="item">
+                    <div><img src="theme/images/resource/project-2.jpg" alt=""></div>
+                    <div class="info">
+                        <h3><a href="project-single.html">Box Perspective</a></h3>
+                        <h4><a href="project-single.html">Engineering</a></h4>
+                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="icon_box_01">
-                        <div class="i_div">
-                            <svg height="38" viewBox="0 0 21 21" width="38" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
-                            <circle cx="10.5" cy="10.5" r="8"/>
-                            <circle cx="10.5" cy="10.5" r="2"/>
-                            <circle cx="10.5" cy="10.5" r="5"/>
-                            </g>
-                            </svg>
-                        </div>
-                        <h3><a href="service_details.html">UI design</a></h3>
-                        <h5>creativ design</h5>
-                        <p>
-                            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.
-                        </p>
+                <div class="item">
+                    <div><img src="theme/images/resource/project-3.jpg" alt=""></div>
+                    <div class="info">
+                        <h3><a href="project-single.html">Bricks High</a></h3>
+                        <h4><a href="project-single.html">Consulting</a></h4>
+                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="col-md-6 col-lg-6 col-xl-3">
-                    <div class="icon_box_01">
-                        <div class="i_div">
-                            <svg height="37" viewBox="0 0 21 21" width="37" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
-                            <path d="m5.5.5h6v5h-6z"/>
-                            <path d="m10.5 11.5h6v5h-6z"/>
-                            <path d="m.5 11.5h6v5h-6z"/>
-                            <path d="m3.498 11.5v-3h10v3"/>
-                            <path d="m8.5 8.5v-3"/>
-                            </g>
-                            </svg>
-                        </div>
-                        <h3><a href="service_details.html">Product analysis</a></h3>
-                        <h5>recharch on product</h5>
-                        <p>
-                            sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit sed quia.
-                        </p>
+                <div class="item">
+                    <div><img src="theme/images/resource/project-4.jpg" alt=""></div>
+                    <div class="info">
+                        <h3><a href="project-single.html">Rustic Nature</a></h3>
+                        <h4><a href="project-single.html">Interior</a></h4>
+                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><img src="theme/images/resource/project-5.jpg" alt=""></div>
+                    <div class="info">
+                        <h3><a href="project-single.html">Pool Party</a></h3>
+                        <h4><a href="project-single.html">Construction</a></h4>
+                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="item">
+                    <div><img src="theme/images/resource/project-6.jpg" alt=""></div>
+                    <div class="info">
+                        <h3><a href="project-single.html">Bar Concept</a></h3>
+                        <h4><a href="project-single.html">Interior</a></h4>
+                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
             </div>
         </div>
+        <br>
+        <div class="text-center">
+            <a href="projects.html" class="theme-btn btn-style-one">more projects</a>
+        </div>
     </section>
-    <!-- Features Section End -->
-
-    <!-- Client Section Start -->
-    <section class="client_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <div class="client_row">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <div class="client_row_left">
-                                    <h5 class="sub_title_2 text-uppercase">Client Feedbacks</h5>
-                                    <h2 class="sec_title">We are proud to provied <span class="fw_300">this service</span></h2>
-                                </div>
-                            </div>
-                            <div class="col-lg-8">
-                                <div class="client_items">
-                                    <div class="client">
-                                        <a href="#"><img src="theme/assets/images/client/1.png" alt=""/></a>
-                                    </div>
-                                    <div class="client">
-                                        <a href="#"><img src="theme/assets/images/client/2.png" alt=""/></a>
-                                    </div>
-                                    <div class="client">
-                                        <a href="#"><img src="theme/assets/images/client/3.png" alt=""/></a>
-                                    </div>
-                                    <div class="client">
-                                        <a href="#"><img src="theme/assets/images/client/4.png" alt=""/></a>
-                                    </div>
-                                </div>
-                            </div>
+    <!--End Project Section-->
+    
+    <!--Services Section Two-->
+    <section class="services-section-two" style="background-image:url(images/background/1.jpg)">
+        <div class="section-inner">
+        <div class="auto-container">
+            <!--Sec Title-->
+            <div class="sec-title light centered">
+                <h2>Our Services</h2>
+                <div class="sub-title">a force for activating cities and reenergizing cultures</div>
+                <div class="separator"></div>
+            </div>
+            <div class="row clearfix">
+                <!--Services Block Two-->
+                <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="theme/images/services/icon-1.svg" alt="">
                         </div>
+                        <h3><a href="services-single.html">Architecture</a></h3>
+                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
+                        <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block Two-->
+                <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="theme/images/services/icon-2.svg" alt="">
+                        </div>
+                        <h3><a href="services-single.html">Consulting & Planning</a></h3>
+                        <div class="text">Our team’s analytical tools and user engagement activities inspire creativity and collaboration that enhance any project.</div>
+                        <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
+                    </div>
+                </div>
+                
+                <!--Services Block Two-->
+                <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <div class="icon-box">
+                            <img src="theme/images/services/icon-3.svg" alt="">
+                        </div>
+                        <h3><a href="services-single.html">Construction</a></h3>
+                        <div class="text">Across our firm, we employ a diverse range of professionals with a successful record delivering high-quality projects.</div>
+                        <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
                     </div>
                 </div>
             </div>
         </div>
+        </div>
     </section>
-    <!-- Client Section End -->
-
-    <!-- Info Section Start -->
-    <section class="info_section info_secton_home">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2 text-center">
-                    <h5 class="sub_title">Helping ambition brands growing</h5>
-                    <h2 class="sec_title">
-                        Business hand in hand with our technology. We <span class="fw_400 td_underline">design spaces</span> will make you fall in love with <span class="fw_400 td_underline secondary_color">work again</span>.
-                    </h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-12 col-lg-8 col-xl-5 pdt45">
-                    <ul class="nav pro_tab clearfix" id="eet_tab" role="tablist">
-                        <li role="presentation">
-                            <a class="active" id="eet_tab_01_label" data-toggle="tab" href="#eet_tab_01" role="tab" aria-controls="eet_tab_01" aria-selected="true">Established</a>
-                        </li>
-                        <li role="presentation">
-                            <a id="eet_tab_02_label" data-toggle="tab" href="#eet_tab_02" role="tab" aria-controls="eet_tab_02" aria-selected="false">Experienced</a>
-                        </li>
-                        <li role="presentation">
-                            <a id="eet_tab_03_label" data-toggle="tab" href="#eet_tab_03" role="tab" aria-controls="eet_tab_03" aria-selected="false">Trusted</a>
-                        </li>
-                    </ul>
-                    <div class="tab-content pro_tab_content" id="pro_tab_content">
-                        <div class="tab-pane fade show active" id="eet_tab_01" role="tabpanel" aria-labelledby="eet_tab_01_label">
-                            <div class="item_content">
-                                <p class="fw_700 quote_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                                <p>
-                                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <a href="#" class="fw_500">ut labore et dolore magna</a> aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                </p>
-                                <div class="circle_progress_container">
-                                    <div class="circle_progress" data-skills="0.50" data-fills="#01d15c" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                    <div class="circle_progress" data-skills="0.25" data-fills="#3dff92" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                    <div class="circle_progress" data-skills="0.75" data-fills="#7635f5" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="eet_tab_02" role="tabpanel" aria-labelledby="eet_tab_02_label">
-                            <div class="item_content">
-                                <p class="fw_700 quote_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                                <p>
-                                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <a href="#" class="fw_500">ut labore et dolore magna</a> aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                </p>
-                                <div class="circle_progress_container">
-                                    <div class="circle_progress" data-skills="0.75" data-fills="#7635f5" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                    <div class="circle_progress" data-skills="0.25" data-fills="#3dff92" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                    <div class="circle_progress" data-skills="0.50" data-fills="#01d15c" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="tab-pane fade" id="eet_tab_03" role="tabpanel" aria-labelledby="eet_tab_03_label">
-                            <div class="item_content">
-                                <p class="fw_700 quote_p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor ut labore et dolore magna aliqua.</p>
-                                <p>
-                                    Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt <a href="#" class="fw_500">ut labore et dolore magna</a> aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
-                                </p>
-                                <div class="circle_progress_container">
-                                    <div class="circle_progress" data-skills="0.25" data-fills="#3dff92" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                    <div class="circle_progress" data-skills="0.75" data-fills="#7635f5" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                    <div class="circle_progress" data-skills="0.50" data-fills="#01d15c" data-emptyfills="rgba(245, 245, 245, 1)" ><strong></strong></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 col-lg-4 col-xl-3 pdl106 pdt58">
-                    <div class="funfact_01 clearfix">
-                        <svg height="41" viewBox="0 0 21 21" width="41" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd" stroke="#7635f5" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
-                        <path d="m.5 8.5 8 4 8.017-4"/>
-                        <path d="m.5 12.5 8 4 8.017-4"/>
-                        <path d="m.5 4.657 8.008 3.843 8.009-3.843-8.009-4.157z"/>
-                        </g>
-                        </svg>
-                        <h2 class="timer" data-count="500"><span>500</span><sup>+</sup></h2>
-                    </div>
-                    <div class="text_box">
-                        <h3>Complete Project</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consecteturmagna aliqua.
-                        </p>
-                    </div>
-                    <div class="bar_01"></div>
-                    <div class="funfact_01 clearfix">
-                        <svg height="40" viewBox="0 0 21 21" width="40" xmlns="http://www.w3.org/2000/svg">
-                        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
-                        <path d="m14.5.5h-12c-1.1045695 0-2 .8954305-2 2v12c0 1.1045695.8954305 2 2 2h12c1.1045695 0 2-.8954305 2-2v-12c0-1.1045695-.8954305-2-2-2z" transform="matrix(0 1 -1 0 17 0)"/>
-                        <path d="m.5 12.5h10c1.1045695 0 2-.8954305 2-2v-10"/>
-                        <path d="m.5 8.5h7c.55228475 0 1-.44771525 1-1v-7"/>
-                        </g>
-                        </svg>
-                        <h2 class="timer" data-count="62"><span>62</span><sup>+</sup></h2>
-                    </div>
-                    <div class="text_box">
-                        <h3>Coffe Time</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consecteturmagna aliqua.
-                        </p>
-                    </div>
-                    <div class="bar_01"></div>
-                    <div class="funfact_01 clearfix">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="41" height="41" viewBox="0 0 21 21">
-                        <g fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" transform="translate(2 2)">
-                        <circle cx="8.5" cy="8.5" r="8"/>
-                        <polygon points="8.5 3.5 10.5 8.5 8.5 13.5 6.5 8.5" transform="rotate(30 8.5 8.5)"/>
-                        </g>
-                        </svg>
-                        <h2 class="timer" data-count="1100"><span>1.1k</span><sup>+</sup></h2>
-                    </div>
-                    <div class="text_box">
-                        <h3>Happy Customer</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consecteturmagna aliqua.
-                        </p>
-                    </div>
-                </div>
-                <div class="col-md-8 col-lg-12 col-xl-4">
-                    <div class="tw-stretch-element-inside-column has_after">
-                        <div class="imgDiv_01">
-                            <img src="theme/assets/images/home_01/3.jpg" alt=""/>
-                        </div>
-                    </div>
+    <!--End Services Section Two-->
+    
+    <!--Counter Section-->
+    <div class="counter-section">
+        <div class="auto-container">
+            <div class="sec-title centered">
+                <h2>Interesting Facts</h2>
+                <div class="sub-title">A summary of our challenges translated into numbers</div>
+                <div class="separator">
+                    <span class="dott"></span>
+                    <span class="dott"></span>
+                    <span class="dott"></span>
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Info Section End -->
-
-    <!-- Info 2 Section Start -->
-    <section class="info_2_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-5">
-                    <div class="info_2_section_content">
-                        <h5 class="sub_title">Helping ambition brands growing</h5>
-                        <h2 class="sec_title">
-                            We specialize in <span class="td_underline">building brands</span>
-                        </h2>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint
-                            occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<br/>
-                            Eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim.
-                        </p>
-                        <a href="portfolio_01.html" class="pro_btn_2"><span>View Work</span></a>
+        <div class="fact-section" style="background-image:url(images/background/2.jpg)">
+            <div class="auto-container">
+                <div class="row clearfix">
+                    <!--Title Column-->
+                    <div class="title-column col-md-6 col-sm-12 col-xs-12">
+                        <div class="title-inner">
+                            <div class="number">15</div>
+                            <div class="text">years transforming places and creating plans that improve life</div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-7">
-                    <div class="video_img">
-                        <img src="theme/assets/images/home_01/4.jpg" alt=""/>
-                        <a href="https://player.vimeo.com/video/23534361" class="single_popup"><i class="icofont-ui-play"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="row mt130">
-                <div class="col-md-6 col-lg-4">
-                    <div class="text_box_2">
-                        <h3>Flexible cowokring whenever you need it</h3>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <ul class="pro_list">
-                            <li>Duis aute irure dolor in</li>
-                            <li>Reprehenderit in voluptate velit esse</li>
-                            <li>Cillum dolore eu fugiat nulla pariatur.</li>
-                            <li>Excepteur sint occaecat.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="text_box_2">
-                        <h3>Work with a macker</h3>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <ul class="pro_list">
-                            <li>Duis aute irure dolor in</li>
-                            <li>Reprehenderit in voluptate velit esse</li>
-                            <li>Cillum dolore eu fugiat nulla pariatur.</li>
-                            <li>Excepteur sint occaecat.</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="text_box_2">
-                        <h3>Making WordPrss with Teamplate Kit</h3>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
-                            cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                        </p>
-                        <ul class="pro_list">
-                            <li>Duis aute irure dolor in</li>
-                            <li>Reprehenderit in voluptate velit esse</li>
-                            <li>Cillum dolore eu fugiat nulla pariatur.</li>
-                            <li>Excepteur sint occaecat.</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Info 2 Section End -->
-
-    <!-- Project Section Start -->
-    <section class="project_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-lg-4">
-                    <div class="project_left">
-                        <h5 class="sub_title">Helping ambition brands growing</h5>
-                        <h2 class="sec_title">Discover Our <span class="fw_400">featured projects</span></h2>
-                        <p>
-                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                        </p>
-                        <ul class="filter_menu">
-                            <li><a href="#" class="filter_item active" data-owl-filter="*">All View</a></li>
-                            <li><a href="#" class="filter_item" data-owl-filter=".ui_design">UI design</a></li>
-                            <li><a href="#" class="filter_item" data-owl-filter=".ui_research">UX Research</a></li>
-                            <li><a href="#" class="filter_item" data-owl-filter=".flater_development">Flatter development </a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-7 col-lg-8">
-                    <div class="tw-stretch-element-inside-column">
-                        <div class="project_slider_wrap">
-                            <div class="project_slider owl-carousel">
-                                <div class="folio_item flater_development">
-                                    <img src="theme/assets/images/projects/1.jpg" alt=""/>
-                                    <div class="folio_content">
-                                        <p><a href="#">Banner</a></p>
-                                        <h5><a href="portfolio_details.01.html">Looking for something</a></h5>
+                    <div class="counter-column col-md-6 col-sm-12 col-xs-12">
+                        
+                        <div class="fact-counter">
+                            <div class="auto-container">
+                                <div class="row clearfix">
+                                
+                                    <!--Column-->
+                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inner">
+                                            <div class="count-outer count-box">
+                                                <span class="count-text" data-speed="2000" data-stop="220">0</span>
+                                            </div>
+                                            <h4 class="counter-title">Certified Engineers</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="folio_item ui_research ui_design">
-                                    <img src="theme/assets/images/projects/2.jpg" alt=""/>
-                                    <div class="folio_content">
-                                        <p><a href="#">Banner</a></p>
-                                        <h5><a href="portfolio_details.01.html">Looking for something</a></h5>
+                            
+                                    <!--Column-->
+                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inner">
+                                            <div class="count-outer count-box">
+                                                <span class="count-text" data-speed="2000" data-stop="180">0</span>
+                                            </div>
+                                            <h4 class="counter-title">Happy Clients</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="folio_item flater_development">
-                                    <img src="theme/assets/images/projects/3.jpg" alt=""/>
-                                    <div class="folio_content">
-                                        <p><a href="#">Banner</a></p>
-                                        <h5><a href="portfolio_details.01.html">Looking for something</a></h5>
+                            
+                                    <!--Column-->
+                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inner">
+                                            <div class="count-outer count-box">
+                                                <span class="count-text" data-speed="2000" data-stop="600">0</span>
+                                            </div>
+                                            <h4 class="counter-title">Awards Won</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="folio_item ui_research ui_design">
-                                    <img src="theme/assets/images/projects/4.jpg" alt=""/>
-                                    <div class="folio_content">
-                                        <p><a href="#">Banner</a></p>
-                                        <h5><a href="portfolio_details.01.html">Looking for something</a></h5>
+                            
+                                    <!--Column-->
+                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
+                                        <div class="inner">
+                                            <div class="count-outer count-box">
+                                                <span class="count-text" data-speed="2000" data-stop="260">0</span>
+                                            </div>
+                                            <h4 class="counter-title">Projects Done</h4>
+                                        </div>
                                     </div>
-                                </div>
-                                <div class="folio_item flater_development">
-                                    <img src="theme/assets/images/projects/5.jpg" alt=""/>
-                                    <div class="folio_content">
-                                        <p><a href="#">Banner</a></p>
-                                        <h5><a href="portfolio_details.01.html">Looking for something</a></h5>
-                                    </div>
-                                </div>
-                                <div class="folio_item ui_research ui_design">
-                                    <img src="theme/assets/images/projects/6.jpg" alt=""/>
-                                    <div class="folio_content">
-                                        <p><a href="#">Banner</a></p>
-                                        <h5><a href="portfolio_details.01.html">Looking for something</a></h5>
-                                    </div>
+                                    
                                 </div>
                             </div>
                         </div>
@@ -947,164 +354,109 @@
                 </div>
             </div>
         </div>
-    </section>
-    <!-- Project Section End -->
+    </div>
+    <!--End Counter Section-->
 
-    <!-- Testimonial Section Start -->
-    <section class="testimonial_section">
-        <div class="container">
-            <div class="row posrelzindex">
-                <div class="col-lg-12 text-center">
-                    <h5 class="sub_title">Feedback Our Client</h5>
-                    <h2 class="sec_title">See what our <span class="fw_400">clients are saying</span></h2>
-                </div>
+    <!--News Section-->
+    <section class="news-section">
+        <div class="auto-container">
+            <!--Sec Title-->
+            <div class="sec-title centered">
+                <h2>Latest News</h2>
+                <div class="sub-title">Learn more about design tips and construction trends</div>
+                <div class="separator"></div>
             </div>
-            <div class="row mtm101">
-                <div class="col-lg-12 col-xl-10 offset-xl-1">
-                    <div class="testimonial_slider slide carousel carousel-fade" data-ride="carousel" id="testimonial_slider">
-                        <div class="carousel-inner">
-                            <div class="carousel-item active">
-                                <div class="testimonial_item">
-                                    <div class="ti_thumb">
-                                        <img src="theme/assets/images/author/1.png" alt=""/>
-                                    </div>
-                                    <div class="ti_author">
-                                        <h5>Eloise Smith</h5>
-                                    </div>
-                                    <div class="ti_content">
-                                        <p>
-                                            &nbsp;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                                            dolores eos quiratione voluptatem sequi nesciunt. adipisci velit, sed quia non numquam eius modi tempora
-                                            incidunt ut labore et dolore <br/>magnam aliquam quaerat voluptatem.
-                                        </p>
-                                    </div>
-                                </div>
+            <div class="row clearfix">
+
+                <!--News Block-->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <a href="blog-single.html">
+                            <div class="image">
+                                <img src="theme/images/resource/news-thumb-1.jpg" alt="" />
                             </div>
-                            <div class="carousel-item">
-                                <div class="testimonial_item">
-                                    <div class="ti_thumb">
-                                        <img src="theme/assets/images/author/4.png" alt=""/>
-                                    </div>
-                                    <div class="ti_author">
-                                        <h5>Eloise Smith</h5>
-                                    </div>
-                                    <div class="ti_content">
-                                        <p>
-                                            &nbsp;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                                            dolores eos quiratione voluptatem sequi nesciunt. adipisci velit, sed quia non numquam eius modi tempora
-                                            incidunt ut labore et dolore <br/>magnam aliquam quaerat voluptatem.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonial_item">
-                                    <div class="ti_thumb">
-                                        <img src="theme/assets/images/author/5.png" alt=""/>
-                                    </div>
-                                    <div class="ti_author">
-                                        <h5>Eloise Smith</h5>
-                                    </div>
-                                    <div class="ti_content">
-                                        <p>
-                                            &nbsp;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                                            dolores eos quiratione voluptatem sequi nesciunt. adipisci velit, sed quia non numquam eius modi tempora
-                                            incidunt ut labore et dolore <br/>magnam aliquam quaerat voluptatem.
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="carousel-item">
-                                <div class="testimonial_item">
-                                    <div class="ti_thumb">
-                                        <img src="theme/assets/images/author/2.png" alt=""/>
-                                    </div>
-                                    <div class="ti_author">
-                                        <h5>Eloise Smith</h5>
-                                    </div>
-                                    <div class="ti_content">
-                                        <p>
-                                            &nbsp;Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
-                                            dolores eos quiratione voluptatem sequi nesciunt. adipisci velit, sed quia non numquam eius modi tempora
-                                            incidunt ut labore et dolore <br/>magnam aliquam quaerat voluptatem.
-                                        </p>
-                                    </div>
+                        </a>
+                        <div class="lower-box">
+                            <div class="post-date"><i class="far fa-calendar-alt"></i> March 29, 2021</div>
+                            <h3><a href="blog-single.html">Everything You Need to Know About Minimalist Design</a></h3>
+                            <div class="text">Clean lines, reductive, uncluttered, monochromatic, simplicity, "less is more" these are some of the terms and concepts.</div>
+                            <div class="clearfix">
+                                <div class="pull-left">
+                                    <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
                                 </div>
                             </div>
                         </div>
-                        <ol class="carousel-indicators">
-                            <li data-target="#testimonial_slider" data-slide-to="1"><img src="theme/assets/images/author/4.png" alt=""/></li>
-                            <li data-target="#testimonial_slider" data-slide-to="2"><img src="theme/assets/images/author/3.png" alt=""/></li>
-                            <li data-target="#testimonial_slider" data-slide-to="3"><img src="theme/assets/images/author/5.png" alt=""/></li>
-                            <li data-target="#testimonial_slider" data-slide-to="4"><img src="theme/assets/images/author/2.png" alt=""/></li>
-                        </ol>
                     </div>
                 </div>
+
+                <!--News Block-->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <a href="blog-single.html">
+                            <div class="image">
+                                <img src="theme/images/resource/news-thumb-2.jpg" alt="" />
+                            </div>
+                        </a>
+                        <div class="lower-box">
+                            <div class="post-date"><i class="far fa-calendar-alt"></i> March 22, 2021</div>
+                            <h3><a href="blog-single.html">Organizing Ideas To Give Your Office The Ultimate Upgrade</a></h3>
+                            <div class="text">Home offices are all the rage right now. Yours could be the headquarters for a small business, questionably relevant papers, or homework central.</div>
+                            <div class="clearfix">
+                                <div class="pull-left">
+                                    <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--News Block-->
+                <div class="news-block col-md-4 col-sm-6 col-xs-12">
+                    <div class="inner-box">
+                        <a href="blog-single.html">
+                            <div class="image">
+                                <img src="theme/images/resource/news-thumb-3.jpg" alt="" />
+                            </div>
+                        </a>
+                        <div class="lower-box">
+                            <div class="post-date"><i class="far fa-calendar-alt"></i> March 15, 2021</div>
+                            <h3><a href="blog-single.html">How to Decorate Your Kitchen with Subway Tiles</a></h3>
+                            <div class="text">It doesn't matter what your design aesthetic is or how much space you have, one thing's for sure: Subway tiles are a failsafe.</div>
+                            <div class="clearfix">
+                                <div class="pull-left">
+                                    <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
-    <!-- Testimonial Section End -->
+    <!--End News Section-->
 
-    <!-- Insight Section Start -->
-    <section class="insight_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h5 class="sub_title">Latest blog insight</h5>
-                    <h2 class="sec_title">Our Insights &amp; <span class="fw_400">creative ideas</span></h2>
-                </div>
+    <!--Testimonial Section-->
+    <section class="clients-section  grey-bg">
+        <div class="auto-container">
+            <div class="title-box">
+                <div class="title">Our work is defined by so much more than just recognition</div>
+                <h2>Trusted by hundreds of clients around the country</h2>
+                <div class="separator"></div>
             </div>
-            <div class="row">
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_insight">
-                        <div class="si_author">
-                            <a href="#"><img src="theme/assets/images/author/6.jpg" alt=""/></a>
-                        </div>
-                        <div class="si_meta">
-                            by <a href="#">Lore Pop</a> <a href="#">Decembar 21, 2020</a>
-                        </div>
-                        <h3>
-                            <a href="blog_single_01.html">
-                                It is really easy to conqure tha world with us by your side
-                            </a>
-                        </h3>
-                        <a href="blog_single_01.html" class="si_arrow"><i class="icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_insight">
-                        <div class="si_author">
-                            <a href="#"><img src="theme/assets/images/author/7.jpg" alt=""/></a>
-                        </div>
-                        <div class="si_meta">
-                            by <a href="#">Lore Pop</a> <a href="#">Decembar 21, 2020</a>
-                        </div>
-                        <h3>
-                            <a href="blog_single_01.html">
-                                It is really easy to conqure tha world with us by your side
-                            </a>
-                        </h3>
-                        <a href="blog_single_01.html" class="si_arrow"><i class="icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-6 col-lg-4">
-                    <div class="single_insight">
-                        <div class="si_author">
-                            <a href="#"><img src="theme/assets/images/author/6.jpg" alt=""/></a>
-                        </div>
-                        <div class="si_meta">
-                            by <a href="#">Lore Pop</a> <a href="#">Decembar 21, 2020</a>
-                        </div>
-                        <h3>
-                            <a href="blog_single_01.html">
-                                It is really easy to conqure tha world with us by your side
-                            </a>
-                        </h3>
-                        <a href="blog_single_01.html" class="si_arrow"><i class="icofont-long-arrow-right"></i></a>
-                    </div>
-                </div>
+            
+            <div class="sponsors-outer">
+                <!--Sponsors Carousel-->
+                <ul class="sponsors-carousel owl-carousel owl-theme">
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/1.jpg" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/2.jpg" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/3.jpg" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/4.jpg" alt=""></a></figure></li>
+                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/5.jpg" alt=""></a></figure></li>
+                </ul>
+
             </div>
         </div>
     </section>
-    <!-- Insight Section End -->
+    <!--End Testimonial Section-->
 @endsection
