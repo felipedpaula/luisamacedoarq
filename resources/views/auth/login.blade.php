@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iofrm</title>
+    <title>Luísa Macêdo Admin</title>
     @include('site.includes.css-default')
     <link rel="stylesheet" type="text/css" href="assets/cms/css/iofrm.css">
     <link rel="stylesheet" type="text/css" href="assets/cms/css/style.css">
     <link rel="stylesheet" type="text/css" href="assets/site/css/bootstrap.css">
+    <link rel="icon" href="{{asset('favicon.ico')}}" type="image/x-icon">
 </head>
 <body>
     <div class="form-body without-side">
@@ -15,7 +16,7 @@
             <div class="form-holder">
                 <div class="form-content">
                     <div class="cms-logo mb-5">
-                        <a href="/"><img width="200px" class="" src="theme/assets/images/logo_01.png" alt="Endereço Online"></a>
+                        <a href="/"><img width="200px" src="{{asset('assets/logo-verde.png')}}" alt="Luísa Macedo Arquitetura"></a>
                     </div>
                     <div class="form-items">
                         <h3 class="mb-4">Login</h3>

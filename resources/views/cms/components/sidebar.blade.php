@@ -97,7 +97,7 @@
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseServices" aria-expanded="true" aria-controls="collapseServices">
-            <i class="fas fa-fw fa-image"></i>
+            <i class="fas fa-fw fa-file"></i>
             <span>Serviços</span>
         </a>
         <div id="collapseServices" class="collapse" aria-labelledby="headingServices" data-parent="#accordionSidebar">
@@ -110,7 +110,7 @@
 
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseProjects" aria-expanded="true" aria-controls="collapseProjects">
-            <i class="fas fa-fw fa-image"></i>
+            <i class="fas fa-fw fa-file"></i>
             <span>Projetos</span>
         </a>
         <div id="collapseProjects" class="collapse" aria-labelledby="headingProjects" data-parent="#accordionSidebar">
@@ -145,7 +145,7 @@
 
     <li class="nav-item">
         <a class="nav-link" href="{{ route('admin.contatos.index') }}">
-            <i class="fas fa-fw fa-tachometer-alt"></i>
+            <i class="fas fa-fw fa-mail-bulk"></i>
             <span>Mensagens</span>
         </a>
     </li>

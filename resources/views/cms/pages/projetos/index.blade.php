@@ -15,17 +15,17 @@
     <div class="row">
         <div class="col-md-8 px-0 d-flex">
             <form class="form-inline">
-                <input class="form-control mr-sm-2" type="search" placeholder="Buscar serviço" aria-label="Search">
+                <input class="form-control mr-sm-2" type="search" placeholder="Buscar projeto" aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
             </form>
         </div>
         <div class="col-md-4 text-right">
-            <a href="{{route('admin.service.create')}}" class="btn btn-primary" type="button">+ Novo serviço</a>
+            <a href="{{route('admin.project.create')}}" class="btn btn-primary" type="button">+ Novo projeto</a>
         </div>
     </div>
 
     <div class="row mt-4">
-        @if (isset($services) && !empty($service))
+        @if (isset($projetos) && !empty($projetos))
         <ul class="list-group col-12">
             <!-- Cabeçalho da Lista -->
             <li class="list-group-item">
@@ -35,14 +35,14 @@
                 </div>
             </li>
 
-            @foreach ($services as $service)
+            @foreach ($projetos as $projeto)
             <!-- Item da Lista -->
             <li class="list-group-item">
             <div class="row flex-nowrap overflow-auto">
-                <div class="col-lg-10">{{$service->title}}</div>
+                <div class="col-lg-10">{{$projeto->title}}</div>
                 <div class="col-lg-2">
                     @can('settings-users')
-                    <a href="{{route('admin.service.edit', ['id' => $service->id])}}" class="btn btn-primary btn-sm">Editar</a>
+                    <a href="{{route('admin.project.edit', ['id' => $projeto->id])}}" class="btn btn-primary btn-sm">Editar</a>
                     @endcan
                 </div>
             </div>
@@ -50,10 +50,10 @@
             @endforeach
         </ul>
 
-        {{ $services->links() }}
+        {{ $projetos->links() }}
 
         @else
-        <p>Não existem serviços cadastrados.</p>
+        <p>Não existem projetos cadastrados.</p>
         @endif
     </div>
 @endsection

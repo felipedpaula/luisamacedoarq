@@ -385,8 +385,7 @@ html, body {
 .form-content .form-items {
     display: inline-block;
     background-color: #FFF;
-    width: 100%;
-    border: 2px solid #000;
+    border: 2px solid #293C27;
     max-width: 360px;
     padding: 12px;
     text-align: left;
@@ -1552,7 +1551,7 @@ input.sm-content {
 }
 
 .form-body.without-side .form-holder .form-content {
-    background-color: #FFF !important;
+    background-color: #D6C9B3 !important;
 }
 
 .form-body.without-side .form-content {
@@ -1563,7 +1562,6 @@ input.sm-content {
 }
 
 .form-body.without-side .form-content .form-items {
-    padding: 35px 30px;
     border-radius: 10px;
     background-color: #fff;
     -webkit-box-shadow: 0 6px 15px rgba(0, 0, 0, 0.16);
@@ -1692,7 +1690,7 @@ input.sm-content {
 }
 
 .form-body.without-side .form-content .form-button .ibtn {
-    background-color: #01d85f;
+    background-color: #293C27;
     color: #fff;
     -webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
     box-shadow: 0 0 0 rgba(0, 0, 0, 0.16);
