@@ -198,7 +198,7 @@ class GaleriasController extends Controller
                 ->withInput();
         }
 
-        // try {
+        try {
             $this->imgGaleria->gallery_id = $idGaleria;
             $this->imgGaleria->img_title = $data['title'];
             if ($request->hasFile('imagem') && $request->file('imagem')->isValid()) {
@@ -208,10 +208,10 @@ class GaleriasController extends Controller
             }
             $this->imgGaleria->save();
             return redirect()->route('admin.galeria.edit', ['id' => $idGaleria])->with('success', 'Galeria atualizada com sucesso!');
-        // } catch (\Exception $e) {
-        //     return redirect()->route('admin.galeria.edit', ['id' => $idGaleria])
-        //         ->with('error', 'Ocorreu um erro ao atualizar a galeria. Por favor, tente novamente.');
-        // }
+        } catch (\Exception $e) {
+            return redirect()->route('admin.galeria.edit', ['id' => $idGaleria])
+                ->with('error', 'Ocorreu um erro ao atualizar a galeria. Por favor, tente novamente.');
+        }
     }
 
     public function remove(Request $request) {

@@ -7,7 +7,11 @@
                 <i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar
             </a>
         </div>
-        <div class="col-md-4"></div>
+        <div class="col-md-4 text-right">
+            <button class="btn btn-danger delete_button">
+                Excluir Serviço <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+        </div>
     </div>
 
     <!-- ALERTAS -->
@@ -35,22 +39,23 @@
     @endif
     <!-- FIM ALERTAS -->
 
-    <form action="{{route('admin.project.store')}}" method="POST" enctype="multipart/form-data">
+    <form action="{{route('admin.service.update', ['id' => $service->id])}}" method="POST" enctype="multipart/form-data">
         @csrf
+        @method('PUT')
         <div class="row">
             <!-- Primeira Coluna -->
             <div class="col-md-6 col-sm-12 pl-0">
                 <div class="form-group">
                     <label for="title">Título:</label>
-                    <input name="title" type="text" class="form-control" id="title">
+                    <input name="title" type="text" class="form-control" id="title" value="{{$service->title}}">
                 </div>
                 <div class="form-group">
                     <label for="resume">Resumo:</label>
-                    <input name="resume" type="text" class="form-control" id="resume">
+                    <input name="resume" type="text" class="form-control" id="resume" value="{{$service->resume}}">
                 </div>
                 <div class="form-group">
                     <label for="body">Texto:</label>
-                    <textarea name="body" id="body" cols="30" rows="15" class="form-control texto-grande"></textarea>
+                    <textarea name="body" id="body" cols="30" rows="15" class="form-control texto-grande">{{$service->body}}</textarea>
                 </div>
             </div>
 
@@ -58,18 +63,14 @@
             <div class="col-md-6 col-sm-12 px-0">
                 <div class="form-group">
                     <label for="img_default">Imagem de destaque:</label>
-                    <img  src="{{asset('assets/site/images/resource/about-2.jpg')}}" alt="preview" width="220px" height="300px" id="preview" class="img-fluid"/>
+                    <img  src="{{asset($service->img_default)}}" alt="preview" width="220px" height="300px" id="preview" class="img-fluid"/>
                     <input type="file" name="img_default" class="form-control" id="img_default">
-                </div>
-                <div class="form-group">
-                    <label for="url_link">URL:</label>
-                    <input name="url_link" type="text" class="form-control" id="url_link">
                 </div>
                 <div class="form-group">
                     <label for="status">Status:</label>
                     <select name="status" class="form-control" id="statusUsuario">
-                        <option value="1">Ativado</option>
-                        <option value="0">Bloqueado</option>
+                        <option value="1" {{isset($service->status) === true && $service->status === 1 ? 'selected="selected"' : ''}}>Ativado</option>
+                        <option value="0" {{isset($service->status) === true && $service->status === 0 ? 'selected="selected"' : ''}}>Bloqueado</option>
                     </select>
                 </div>
             </div>
@@ -77,9 +78,32 @@
 
         <!-- Botão de Submissão -->
         <div class="text-right">
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
     </form>
+
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <form id="publicidadeExcluirForm" method="POST" action="{{route('admin.service.delete', ['id' => $service->id])}}">
+                    {{ method_field('DELETE') }}
+                    {{ csrf_field() }}
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="exampleModalCenterTitle">Excluir Serviço</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    </div>
+                    <div class="modal-body">
+                        Você tem <b>certeza</b> que deseja excluir o Serviço <b>"<span>{{$service->title}}</span>"</b>?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-danger">Excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
 
     <script>
         function readImage() {

@@ -25,12 +25,12 @@
     </div>
 
     <div class="row mt-4">
-        @if (isset($services) && !empty($service))
+        @if (isset($services) && count($services) > 0)
         <ul class="list-group col-12">
             <!-- Cabeçalho da Lista -->
             <li class="list-group-item">
                 <div class="row font-weight-bold flex-nowrap overflow-auto">
-                    <div class="col-lg-8">Título</div>
+                    <div class="col-lg-10">Título</div>
                     <div class="col-lg-2">Ações</div>
                 </div>
             </li>
@@ -41,9 +41,7 @@
             <div class="row flex-nowrap overflow-auto">
                 <div class="col-lg-10">{{$service->title}}</div>
                 <div class="col-lg-2">
-                    @can('settings-users')
                     <a href="{{route('admin.service.edit', ['id' => $service->id])}}" class="btn btn-primary btn-sm">Editar</a>
-                    @endcan
                 </div>
             </div>
             </li>

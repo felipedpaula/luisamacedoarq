@@ -45,9 +45,7 @@
                 </div>
                 <div class="col-lg-8">{{$galeria->title}}</div>
                 <div class="col-lg-2">
-                    @can('settings-users')
                     <a href="{{route('admin.galeria.edit', ['id' => $galeria->id])}}" class="btn btn-primary btn-sm">Editar</a>
-                    @endcan
                 </div>
             </div>
             </li>
