@@ -49,7 +49,7 @@ class ServicesController extends Controller
         ];
 
         if($request->file('img_default')){
-            $img_default = $request->file('img_default')->store('public/images/services');
+            $img_default = $request->file('img_default')->store('public/images');
             $url = asset(Storage::url($img_default));
             $data['img_default']= Storage::url($url);
 

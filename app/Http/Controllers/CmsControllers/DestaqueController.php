@@ -49,7 +49,7 @@ class DestaqueController extends Controller
             'subtitle',
             'body',
             'url_link',
-            'texto_link',
+            'txt_link',
             'date_start',
             'date_end',
             'ordem',
@@ -62,7 +62,7 @@ class DestaqueController extends Controller
             'subtitle' => ['required', 'string', 'max:255'],
             'body' => ['required'],
             'url_link' => ['nullable', 'string' , 'max:255'],
-            'texto_link' => ['nullable', 'string' , 'max:255'],
+            'txt_link' => ['nullable', 'string' , 'max:255'],
             'date_start' => ['nullable', 'date'],
             'date_end' => ['nullable', 'date'],
             'ordem' => ['required'],
@@ -70,7 +70,7 @@ class DestaqueController extends Controller
         ];
 
         if($request->file('img_src')){
-            $path =  Storage::disk('public')->put('/images/destaques', $request->file('img_src'));
+            $path =  Storage::disk('public')->put('/images', $request->file('img_src'));
             $data['img_src']= Storage::url($path);
 
         }else{
@@ -101,7 +101,7 @@ class DestaqueController extends Controller
                 'subtitle' => $data['subtitle'],
                 'body' =>  $data['body'],
                 'url_link' =>  $data['url_link'],
-                'texto_link' =>  $data['texto_link'],
+                'txt_link' =>  $data['txt_link'],
                 'date_start' => $data['date_start'],
                 'date_end' => $data['date_end'],
                 'ordem' => $data['ordem'],
@@ -178,7 +178,7 @@ class DestaqueController extends Controller
                     Storage::disk('public')->delete($existingImage);
                 }
                 // Armazenar a nova imagem
-                $path = Storage::disk('public')->put('/images/destaques', $request->file('img_src'));
+                $path = Storage::disk('public')->put('/images', $request->file('img_src'));
                 $data['img_src'] = Storage::url($path);
             }else{
                 // Caso contrário, manter a imagem existente
