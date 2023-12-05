@@ -49,16 +49,15 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label for="name">Título</label>
-                    <input name="titulo" type="text" class="form-control" id="titulo"
-                    value="{{isset($destaque->titulo) === true ? $destaque->titulo : ''}}"
+                    <input name="title" type="text" class="form-control" id="title"
+                    value="{{isset($destaque->title) === true ? $destaque->title : ''}}"
                     >
                 </div>
 
-
                 <div class="form-group">
-                    <label for="data_inicio">Data Inicial</label>
-                    <input name="data_inicio" type="text" class="form-control date-time" autocomplete="off" id="data_inicio"
-                    value="{{ isset($destaque->data_inicio) === true ? date('d/m/Y H:i', strtotime($destaque->data_inicio)) : '' }}"
+                    <label for="date_start">Data Inicial</label>
+                    <input name="date_start" type="text" class="form-control date-time" autocomplete="off" id="date_start"
+                    value="{{ isset($destaque->date_start) === true ? date('d/m/Y H:i', strtotime($destaque->date_start)) : '' }}"
                     >
                 </div>
 
@@ -77,16 +76,14 @@
                             <option value="{{$categoria->id}}"
                                 {{isset($destaque->categoria_id) === true && $destaque->categoria_id === $categoria->id ? 'selected="selected"' : ''}}
                             >
-                            {{$categoria->titulo}}</option>
+                            {{$categoria->title}}</option>
                         @endforeach
                     </select>
                 </div>
 
-
-
                 <div class="form-group">
                     <label for="img_src">Imagem</label>
-                    <img  src="{{asset($destaque->img_src)}}" alt="preview" width="220px" height="300px" id="preview" class="img-fluid"/>
+                    <img src="{{asset($destaque->img_src)}}" alt="preview" width="220px" height="300px" id="preview" class="img-fluid"/>
                     <input type="file" name="img_src" class="form-control" id="img_src">
                 </div>
 
@@ -96,33 +93,33 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label for="subtitle">Subtítulo</label>
-                    <input name="subtitulo" type="text" class="form-control" id="subtitulo"
-                    value="{{isset($destaque->subtitulo) === true ? $destaque->subtitulo : ''}}"
+                    <input name="subtitle" type="text" class="form-control" id="subtitle"
+                    value="{{isset($destaque->subtitle) === true ? $destaque->subtitle : ''}}"
                     >
                 </div>
 
                 <div class="form-group">
                     <label for="texto">Data Final</label>
-                    <input name="data_fim" type="text" class="form-control date-time" autocomplete="off" id="data_fim"
-                    value="{{ isset($destaque->data_fim) === true ? date('d/m/Y H:i', strtotime($destaque->data_fim)) : '' }}"
+                    <input name="date_end" type="text" class="form-control date-time" autocomplete="off" id="date_end"
+                    value="{{ isset($destaque->date_end) === true ? date('d/m/Y H:i', strtotime($destaque->date_end)) : '' }}"
                     >
                 </div>
 
                 <div class="form-group">
-                    <label for="description">Texto do Link</label>
-                    <input name="texto_link" type="text" class="form-control" id="texto_link" value="{{isset($destaque->texto_link) === true ? $destaque->texto_link : ''}}">
+                    <label for="txt_link">Texto do Link</label>
+                    <input name="txt_link" type="text" class="form-control" id="txt_link" value="{{isset($destaque->txt_link) === true ? $destaque->txt_link : ''}}">
                 </div>
 
                 <div class="form-group">
                     <label for="texto">Texto</label>
-                    <textarea name="texto" id="texto" cols="30" rows="15" class="form-control texto-grande">
-                        {!! isset($destaque->texto) === true ? $destaque->texto : '' !!}
+                    <textarea name="body" id="body" cols="30" rows="15" class="form-control texto-grande">
+                        {!! isset($destaque->body) === true ? $destaque->body : '' !!}
                     </textarea>
                 </div>
 
                 <div class="form-group">
-                    <label for="ordem">Ordem</label>
-                    <input name="ordem" type="Number" class="form-control " id="ordem" min="0" value="{{isset($destaque->ordem) === true ? $destaque->ordem : ''}}">
+                    <label for="order">Ordem</label>
+                    <input name="order" type="Number" class="form-control " id="order" min="0" value="{{isset($destaque->order) === true ? $destaque->order : ''}}">
                 </div>
 
                 <div class="form-group">

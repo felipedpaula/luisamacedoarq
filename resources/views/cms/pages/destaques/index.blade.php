@@ -30,7 +30,7 @@
     </div>
 
     <div class="row mt-4">
-        @if (isset($destaques) && !empty($destaques))
+        @if (isset($destaques) && count($destaques) > 0)
         <ul class="list-group col-12">
             <!-- Cabeçalho da Lista -->
             <li class="list-group-item">
@@ -46,9 +46,9 @@
             <!-- Item da Lista -->
             <li class="list-group-item">
             <div class="row flex-nowrap overflow-auto">
-                <div class="col-lg-3">{{$destaque->titulo}}</div>
-                <div class="col-lg-3">{{ $destaque->categoria->titulo }}</div>
-                <div class="col-lg-3">{{ isset($destaque->data_fim) === true ? date('d/m/Y H:i', strtotime($destaque->data_fim)) : '' }}</div>
+                <div class="col-lg-3">{{$destaque->title}}</div>
+                <div class="col-lg-3">{{ $destaque->categoria->title }}</div>
+                <div class="col-lg-3">{{ isset($destaque->date_end) === true ? date('d/m/Y H:i', strtotime($destaque->date_end)) : '' }}</div>
                 <div class="col-lg-3">
                     <a href="{{route('admin.destaque.edit', ['id' => $destaque->id])}}" class="btn btn-primary btn-sm">Editar</a>
                 </div>

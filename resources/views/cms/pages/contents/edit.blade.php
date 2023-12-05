@@ -49,7 +49,7 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label for="name">Título</label>
-                    <input name="title" type="text" class="form-control" id="title" value="{{isset($content->title) === true ? $content->title : ''}}">
+                    <input name="title" type="text" class="form-control texto-grande" id="title" value="{{isset($content->title) === true ? $content->title : ''}}">
                 </div>
                 <div class="form-group">
                     <label for="type_id">Tipo de Conteudo</label>
@@ -87,13 +87,8 @@
                     <input name="author" type="text" class="form-control" id="author" value="{{isset($content->author) === true ? $content->author : ''}}">
                 </div>
                 <div class="form-group">
-                    <label for="description">Descrição</label>
-                    <textarea name="description" id="description" cols="30" rows="5" class="form-control">{{isset($content->description) === true ? $content->description : ''}}</textarea>
-                </div>
-
-                <div class="form-group">
                     <label for="body">Texto</label>
-                    <textarea name="body" id="body" cols="30" rows="15" class="form-control text-grande">{{isset($content->body) === true ? $content->body : ''}}</textarea>
+                    <textarea name="body" id="body" cols="30" rows="15" class="form-control texto-grande">{{isset($content->body) === true ? $content->body : ''}}</textarea>
                 </div>
 
                 <div class="form-group">

@@ -33,11 +33,9 @@ class DestaqueController extends Controller
      */
     public function register()
     {
-
         $this->dadosPagina['tituloPagina'] = 'Registro de Destaques';
         $this->dadosPagina['destaqueCategorias'] = CategoriaDestaque::all();
         return view('cms.pages.destaques.register', $this->dadosPagina);
-
     }
 
     /**
@@ -47,26 +45,26 @@ class DestaqueController extends Controller
     {
         $data = $request->only([
             'categoria_id',
-            'titulo',
-            'subtitulo',
-            'texto',
+            'title',
+            'subtitle',
+            'body',
             'url_link',
             'texto_link',
-            'data_inicio',
-            'data_fim',
+            'date_start',
+            'date_end',
             'ordem',
             'status',
         ]);
 
         $rules = [
             'categoria_id' => ['required'],
-            'titulo' => ['required', 'string', 'max:255'],
-            'subtitulo' => ['required', 'string', 'max:255'],
-            'texto' => ['required'],
+            'title' => ['required', 'string', 'max:255'],
+            'subtitle' => ['required', 'string', 'max:255'],
+            'body' => ['required'],
             'url_link' => ['nullable', 'string' , 'max:255'],
             'texto_link' => ['nullable', 'string' , 'max:255'],
-            'data_inicio' => ['nullable', 'date'],
-            'data_fim' => ['nullable', 'date'],
+            'date_start' => ['nullable', 'date'],
+            'date_end' => ['nullable', 'date'],
             'ordem' => ['required'],
             'status' => ['required', 'in:0,1'],
         ];
@@ -79,14 +77,14 @@ class DestaqueController extends Controller
             $data['img_src']= 'assets/site/images/main-slider/slider-2.jpg';
         }
 
-        if($request->data_inicio){
-            $data_inicio = \DateTime::createFromFormat('d/m/Y H:i:s', $request->data_inicio.':00');
-            $data['data_inicio'] = $data_inicio->format('Y-m-d H:i:s');
+        if($request->date_start){
+            $date_start = \DateTime::createFromFormat('d/m/Y H:i:s', $request->date_start.':00');
+            $data['date_start'] = $date_start->format('Y-m-d H:i:s');
         }
 
-        if($request->data_fim){
-            $data_fim = \DateTime::createFromFormat('d/m/Y H:i:s', $request->data_fim.':00');
-            $data['data_fim'] = $data_fim->format('Y-m-d H:i:s');
+        if($request->date_end){
+            $date_end = \DateTime::createFromFormat('d/m/Y H:i:s', $request->date_end.':00');
+            $data['date_end'] = $date_end->format('Y-m-d H:i:s');
         }
 
         $validator = Validator::make($data, $rules);
@@ -96,16 +94,16 @@ class DestaqueController extends Controller
             ->withInput();
         }
 
-      try {
+        try {
             $destaque = new Destaque([
                 'categoria_id' => $data['categoria_id'],
-                'titulo' => $data['titulo'],
-                'subtitulo' => $data['subtitulo'],
-                'texto' =>  $data['texto'],
+                'title' => $data['title'],
+                'subtitle' => $data['subtitle'],
+                'body' =>  $data['body'],
                 'url_link' =>  $data['url_link'],
                 'texto_link' =>  $data['texto_link'],
-                'data_inicio' => $data['data_inicio'],
-                'data_fim' => $data['data_fim'],
+                'date_start' => $data['date_start'],
+                'date_end' => $data['date_end'],
                 'ordem' => $data['ordem'],
                 'status' => $data['status'],
                 'img_src' => $data['img_src']
@@ -148,27 +146,27 @@ class DestaqueController extends Controller
 
             $data = $request->only([
                 'categoria_id',
-                'titulo',
-                'subtitulo',
-                'texto',
+                'title',
+                'subtitle',
+                'body',
                 'url_link',
-                'texto_link',
-                'data_inicio',
-                'data_fim',
-                'ordem',
+                'txt_link',
+                'date_start',
+                'date_end',
+                'order',
                 'status',
             ]);
 
             $rules = [
                 'categoria_id' => ['required'],
-                'titulo' => ['required', 'string', 'max:255'],
-                'subtitulo' => ['required', 'string', 'max:255'],
-                'texto' => ['required'],
+                'title' => ['required', 'string', 'max:255'],
+                'subtitle' => ['required', 'string', 'max:255'],
+                'body' => ['required'],
                 'url_link' => ['nullable', 'string' , 'max:255'],
-                'texto_link' => ['nullable', 'string' , 'max:255'],
-                'data_inicio' => ['nullable', 'date'],
-                'data_fim' => ['nullable', 'date'],
-                'ordem' => ['required'],
+                'txt_link' => ['nullable', 'string' , 'max:255'],
+                'date_start' => ['nullable', 'date'],
+                'date_end' => ['nullable', 'date'],
+                'order' => ['required'],
                 'status' => ['required', 'in:0,1'],
             ];
 
@@ -187,14 +185,14 @@ class DestaqueController extends Controller
                 unset($data['img_src']);
             }
 
-            if($request->data_inicio){
-                $data_inicio = \DateTime::createFromFormat('d/m/Y H:i:s', $request->data_inicio.':00');
-                $data['data_inicio'] = $data_inicio->format('Y-m-d H:i:s');
+            if($request->date_start){
+                $date_start = \DateTime::createFromFormat('d/m/Y H:i:s', $request->date_start.':00');
+                $data['date_start'] = $date_start->format('Y-m-d H:i:s');
             }
 
-            if($request->data_fim){
-                $data_fim = \DateTime::createFromFormat('d/m/Y H:i:s', $request->data_fim.':00');
-                $data['data_fim'] = $data_fim->format('Y-m-d H:i:s');
+            if($request->date_end){
+                $date_end = \DateTime::createFromFormat('d/m/Y H:i:s', $request->date_end.':00');
+                $data['date_end'] = $date_end->format('Y-m-d H:i:s');
             }
 
             $validator = Validator::make($data, $rules);
@@ -205,8 +203,8 @@ class DestaqueController extends Controller
             }
 
             try {
-                    $destaque->update($data);
-                    return redirect()->route('admin.destaques.index')->with('success', 'Destaque Alterado com sucesso!');
+                $destaque->update($data);
+                return redirect()->route('admin.destaques.index')->with('success', 'Destaque Alterado com sucesso!');
             } catch (\Throwable $th) {
                 return redirect()->route('admin.destaque.edit', ['id' => $id])
                 ->with('error', 'Ocorreu um erro ao atualizar o Destaque. Por favor, tente novamente.');

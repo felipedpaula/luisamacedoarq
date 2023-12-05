@@ -10,12 +10,12 @@
             <div class="clearfix">
                 <div class="top-left">
                     <ul class="clearfix">
-                        <li>Welcome to Aizen Architecture Theme</li>
+                        <li>Sejam bem vindos :D</li>
                     </ul>
                 </div>
                 <div class="top-right clearfix">
                     <ul class="clearfix">
-                        <li>Follow us
+                        <li>Me encontre nas redes
                             <div class="social-links">
                                 <a href="#"><span class="fab fa-instagram"></span></a>
                                 <a href="#"><span class="fab fa-facebook-f"></span></a>
@@ -35,7 +35,7 @@
     <div class="header-upper">
         <div class="auto-container clearfix">
             <div class="pull-left logo-outer">
-                <div class="logo"><a href="index.html"><img src="theme/images/logo.png" alt="Aizen - Architecture Template" title="Aizen - Architecture Template"></a></div>
+                <div class="logo"><a href="/"><img width="200px" src="assets/logo-verde.png" alt="Luísa Macêdo" title="Luísa Macêdo - Arquitetura e Urbanismo"></a></div>
             </div>
             <div class="pull-right upper-right clearfix">
                 <nav class="main-menu">
@@ -49,21 +49,17 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li class="dropdown"><a href="#">Pages</a>
+                            <li class="current"><a href="/">Home</a></li>
+                            <li><a href="/sobre">Sobre mim</a></li>
+                            <li><a href="/servicos">Serviços</a></li>
+                            <li><a href="/projetos">Projetos</a></li>
+                            <li><a href="/contato">Contato</a></li>
+                            <li class="dropdown"><a href="#">Mais +</a>
                                 <ul>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="faqs.html">Faqs</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="error-page.html">404 page</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/galeria">Galeria</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -77,7 +73,7 @@
         <div class="auto-container clearfix">
             <!--Logo-->
             <div class="logo pull-left">
-                <a href="index.html" class="img-responsive"><img src="theme/images/logo-small.png" alt="Aizen - Architecture Template" title="Aizen - Architecture Template"></a>
+                <a href="/" class="img-responsive"><img width="150px" src="assets/logo-verde.png" alt="Aizen - Architecture Template" title="Aizen - Architecture Template"></a>
             </div>
             <!--Right Col-->
             <div class="right-col pull-right">
@@ -94,26 +90,21 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current"><a href="index.html">Home</a></li>
-                            <li><a href="about.html">About Us</a></li>
-                            <li><a href="services.html">Services</a></li>
-                            <li><a href="projects.html">Projects</a></li>
-                            <li class="dropdown"><a href="#">Pages</a>
+                            <li class="current"><a href="/">Home</a></li>
+                            <li><a href="/sobre">Sobre mim</a></li>
+                            <li><a href="/servicos">Serviços</a></li>
+                            <li><a href="/projetos">Projetos</a></li>
+                            <li><a href="/contato">Contato</a></li>
+                            <li class="dropdown"><a href="#">Mais +</a>
                                 <ul>
-                                    <li><a href="team.html">Team</a></li>
-                                    <li><a href="testimonials.html">Testimonials</a></li>
-                                    <li><a href="faqs.html">Faqs</a></li>
-                                    <li><a href="gallery.html">Gallery</a></li>
-                                    <li><a href="error-page.html">404 page</a></li>
+                                    <li><a href="/blog">Blog</a></li>
+                                    <li><a href="/galeria">Galeria</a></li>
                                 </ul>
                             </li>
-                            <li><a href="blog.html">Blog</a></li>
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
                 <!-- Main Menu End-->
-
             </div>
         </div>
     </div>

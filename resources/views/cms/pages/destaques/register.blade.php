@@ -34,13 +34,13 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label for="name">Título</label>
-                    <input name="titulo" type="text" class="form-control" id="title">
+                    <input name="title" type="text" class="form-control" id="title">
                 </div>
 
 
                 <div class="form-group">
-                    <label for="data_inicio">Data Inicial</label>
-                    <input name="data_inicio" type="text" class="form-control date-time" autocomplete="off" id="data_inicio">
+                    <label for="date_start">Data Inicial</label>
+                    <input name="date_start" type="text" class="form-control date-time" autocomplete="off" id="date_start">
                 </div>
 
                 <div class="form-group">
@@ -53,7 +53,7 @@
                     <label for="type_id">Categoria de Destaque</label>
                     <select name="categoria_id" class="form-control" id="categoria_id">
                         @foreach ($destaqueCategorias as $categoria)
-                            <option value="{{$categoria->id}}">{{$categoria->titulo}}</option>
+                            <option value="{{$categoria->id}}">{{$categoria->title}}</option>
                         @endforeach
                     </select>
                 </div>
@@ -70,22 +70,22 @@
             <div class="col-md-6 col-sm-12">
                 <div class="form-group">
                     <label for="subtitle">Subtítulo</label>
-                    <input name="subtitulo" type="text" class="form-control" id="subtitulo">
+                    <input name="subtitle" type="text" class="form-control" id="subtitle">
                 </div>
 
                 <div class="form-group">
-                    <label for="texto">Data Final</label>
-                    <input name="data_fim" type="text" class="form-control date-time" autocomplete="off" id="data_fim">
+                    <label for="date_end">Data Final</label>
+                    <input name="date_end" type="text" class="form-control date-time" autocomplete="off" id="date_end">
                 </div>
 
                 <div class="form-group">
                     <label for="description">Texto do Link</label>
-                    <input name="texto_link" type="text" class="form-control" id="texto_link">
+                    <input name="txt_link" type="text" class="form-control" id="txt_link">
                 </div>
 
                 <div class="form-group">
-                    <label for="texto">Texto</label>
-                    <textarea name="texto" id="texto" cols="30" rows="15" class="form-control texto-grande"></textarea>
+                    <label for="body">Texto</label>
+                    <textarea name="body" id="body" cols="30" rows="15" class="form-control texto-grande"></textarea>
                 </div>
 
                 <div class="form-group">
@@ -109,19 +109,18 @@
         </div>
     </form>
 
-
     <script>
-            function readImage() {
-                if (this.files && this.files[0]) {
-                    var file = new FileReader();
-                    file.onload = function(e) {
-                        document.getElementById("preview").src = e.target.result;
-                    };
-                    file.readAsDataURL(this.files[0]);
-                }
+        function readImage() {
+            if (this.files && this.files[0]) {
+                var file = new FileReader();
+                file.onload = function(e) {
+                    document.getElementById("preview").src = e.target.result;
+                };
+                file.readAsDataURL(this.files[0]);
             }
+        }
 
-            document.getElementById("img_src").addEventListener("change", readImage, false);
+        document.getElementById("img_src").addEventListener("change", readImage, false);
 
     </script>
 

@@ -11,19 +11,19 @@ class Destaque extends Model
 
     protected $table = 'destaques';
 
-    protected $fillable =[
-                'categoria_id' ,
-                'title',
-                'subtitle' ,
-                'body',
-                'url_link',
-                'txt_link',
-                'img_src',
-                'date_start',
-                'date_end',
-                'order' ,
-                'status'
-            ];
+    protected $fillable = [
+        'categoria_id' ,
+        'title',
+        'subtitle' ,
+        'body',
+        'url_link',
+        'txt_link',
+        'img_src',
+        'date_start',
+        'date_end',
+        'order' ,
+        'status'
+    ];
 
 
     public function categoria(){

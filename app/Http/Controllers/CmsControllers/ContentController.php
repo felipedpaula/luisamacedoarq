@@ -51,7 +51,6 @@ class ContentController extends Controller
             'subtitle',
             'resume',
             'body',
-            'description',
             'author',
             'type_id',
             'status',
@@ -63,7 +62,6 @@ class ContentController extends Controller
             'subtitle' => ['required', 'string'],
             'resume' => ['required', 'string'],
             'body' => ['required', 'string'],
-            'description' => ['required', 'string'],
             'author' => ['required', 'string'],
             'type_id' => ['required'],
             'status' => ['required', 'in:0,1'],
@@ -86,29 +84,28 @@ class ContentController extends Controller
         }
 
 
-        try {
+        // try {
 
-                $content = new Content([
-                    'title' => $data['title'],
-                    'slug' => $data['slug'],
-                    'subtitle' => $data['subtitle'],
-                    'resume' =>  $data['resume'],
-                    'body' =>  $data['body'],
-                    'description' =>  $data['description'],
-                    'type_id' => $data['type_id'],
-                    'author' => $data['author'],
-                    'status' => $data['status'],
-                    'img_default' => $data['img_default']
-                ]);
+            $content = new Content([
+                'title' => $data['title'],
+                'slug' => $data['slug'],
+                'subtitle' => $data['subtitle'],
+                'resume' =>  $data['resume'],
+                'body' =>  $data['body'],
+                'type_id' => $data['type_id'],
+                'author' => $data['author'],
+                'status' => $data['status'],
+                'img_default' => $data['img_default']
+            ]);
 
-                $content->save();
+            $content->save();
 
 
          return redirect()->route('admin.contents.index')->with('success', 'Conteúdo criado com sucesso!');
 
-        } catch (\Exception $e) {
-            return redirect()->route('admin.content.create')->with('errors', 'Ocorreu um erro ao criar o Conteudo. Por favor, tente novamente.');
-        }
+        // } catch (\Exception $e) {
+        //     return redirect()->route('admin.content.create')->with('errors', 'Ocorreu um erro ao criar o Conteudo. Por favor, tente novamente.');
+        // }
     }
 
 
@@ -141,7 +138,6 @@ class ContentController extends Controller
                 'subtitle',
                 'resume',
                 'body',
-                'description',
                 'author',
                 'type_id',
                 'status',
@@ -153,7 +149,6 @@ class ContentController extends Controller
                 'subtitle' => ['required', 'string'],
                 'resume' => ['required', 'string'],
                 'body' => ['required', 'string'],
-                'description' => ['required', 'string'],
                 'author' => ['required', 'string'],
                 'type_id' => ['required'],
                 'status' => ['required', 'in:0,1'],

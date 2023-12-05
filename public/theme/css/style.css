@@ -116,7 +116,7 @@ p,.text{
 
 .auto-container{
 	position:static;
-	max-width:1200px;
+	max-width:1140px;
 	padding:0px 15px;
 	margin:0 auto;
 }
@@ -262,23 +262,22 @@ ul,li{
 }
 
 .btn-style-two:hover{
-	background:#c8b499;
+	background:#293C2750;
 	color:#ffffff;
-	border-color:#c8b499;
 }
 
 /*Btn Style Three*/
 
 .btn-style-three{
 	position:relative;
-	padding:11px 34px;
+	padding:14px 34px;
 	line-height:24px;
 	color:#ffffff;
 	font-size:15px;
-	font-weight:500;
+	font-weight:800;
 	text-transform:uppercase;
-	border:2px solid #e98135;
-	background: #e98135;
+	border-radius: 6px;
+	background: #293C27;
 }
 
 .btn-style-three:hover{
@@ -1459,7 +1458,7 @@ img{
 .main-slider .text{
 	position:relative;
 	font-size:22px;
-	font-weight:400;
+	font-weight:600;
 	color:#403e39;
 	line-height:28px;
 }

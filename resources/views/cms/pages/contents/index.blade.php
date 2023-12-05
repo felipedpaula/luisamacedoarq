@@ -30,7 +30,7 @@
     </div>
 
     <div class="row mt-4">
-        @if (isset($contents) && !empty($contents))
+        @if (isset($contents) && count($contents) > 0)
         <ul class="list-group col-12">
             <!-- Cabeçalho da Lista -->
             <li class="list-group-item">

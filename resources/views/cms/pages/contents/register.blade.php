@@ -68,11 +68,6 @@
                     <input name="author" type="text" class="form-control" id="author">
                 </div>
                 <div class="form-group">
-                    <label for="description">Descrição</label>
-                    <textarea name="description" id="description" cols="30" rows="5" class="form-control"></textarea>
-                </div>
-
-                <div class="form-group">
                     <label for="body">Texto</label>
                     <textarea name="body" id="body" cols="30" rows="15" class="form-control texto-grande"></textarea>
                 </div>

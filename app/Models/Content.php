@@ -16,7 +16,6 @@ class Content extends Model
         'slug',
         'resume',
         'body',
-        'description',
         'author',
         'img_default',
         'status',
