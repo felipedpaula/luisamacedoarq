@@ -8,12 +8,11 @@
                 <i class="fa fa-arrow-left" aria-hidden="true"></i> Voltar
             </a>
         </div>
-
-            <div class="col-md-4 text-right">
-                <button class="btn btn-danger delete_button">
-                    Excluir Destaque <i class="fa fa-trash" aria-hidden="true"></i>
-                </button>
-            </div>
+        <div class="col-md-4 text-right">
+            <button class="btn btn-danger delete_button">
+                Excluir Destaque <i class="fa fa-trash" aria-hidden="true"></i>
+            </button>
+        </div>
     </div>
 
     <!-- ALERTAS -->
@@ -134,7 +133,7 @@
 
         <!-- Botão de Submissão -->
         <div class="text-right">
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
     </form>
 

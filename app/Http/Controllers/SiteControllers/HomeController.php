@@ -12,15 +12,12 @@ class HomeController extends Controller
 {
 
     private $destaques;
-    private $eventos;
-    private $imagens;
     private $posts;
+    private $projects;
     private $dadosPagina;
 
     public function __construct() {
         $this->destaques = new Destaque();
-        $this->eventos = new Event();
-        $this->imagens = new ImagemGaleria();
         $this->posts = new Content();
     }
     /**
@@ -31,9 +28,6 @@ class HomeController extends Controller
     public function index()
     {
         $this->dadosPagina['destaques'] = $this->destaques->getDestaques('slider-home', 3);
-        $this->dadosPagina['proxEventos'] = $this->eventos->getProxEventosHome();
-        $this->dadosPagina['ultimosEventos'] = $this->eventos->getUltimosEventosHome();
-        $this->dadosPagina['imagens'] = $this->imagens->getImagensHome();
         $this->dadosPagina['posts'] = $this->posts->getConteudosHome();
 
         return view('site.pages.home.index', $this->dadosPagina);

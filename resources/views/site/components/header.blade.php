@@ -49,7 +49,6 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current"><a href="/">Home</a></li>
                             <li><a href="/sobre">Sobre mim</a></li>
                             <li><a href="/servicos">Serviços</a></li>
                             <li><a href="/projetos">Projetos</a></li>
@@ -90,7 +89,6 @@
                     </div>
                     <div class="navbar-collapse collapse clearfix">
                         <ul class="navigation clearfix">
-                            <li class="current"><a href="/">Home</a></li>
                             <li><a href="/sobre">Sobre mim</a></li>
                             <li><a href="/servicos">Serviços</a></li>
                             <li><a href="/projetos">Projetos</a></li>

@@ -83,19 +83,18 @@
                 <div class="about-details col-md-12 col-sm-12 col-xs-12">
                     <div class="inner-column">
                         <div class="sec-title style-two">
-                            <div class="sub-title">From undulating skyscrapers to marvelous museums</div>
-                            <h2>About <span>Aizen</span></h2>
+                            <div class="sub-title">A paixão e a visão por trás dos projetos arquitetônicos.</div>
+                            <h2>Sobre <span>mim</span></h2>
                             <div class="separator"></div>
                         </div>
                         <div class="text">
-                            <p>Building design at its visionary best engages, exhilarates, and inspires. It possesses a quality—almost indescribable—that embodies design ingenuity, connection to place, and, above all, imagination. But today’s architectural monuments aren’t meant only to be admired from afar.</p>
-                            <p>Together they conceived an asymmetrical structure clad in a skin of LED-illuminated glass-and-steel bricks, which every evening gives Icelanders a show as dazzling as the northern lights.</p>
+                            <p>Olá! Sou Luísa Macêdo, arquiteta formada pela renomada PUC-GO e atualmente atuando no coração de Goiânia. Acredito que cada espaço deve refletir não só uma estética naturalista, mas também a essência e personalidade de quem o habita. Em cada projeto, busco criar ambientes que contem histórias, se conectem com a natureza e celebrem a individualidade dos meus clientes. Seja bem-vindo ao meu universo arquitetônico.</p>
                         </div>
                     </div>
                 </div>
                 <div class="about-details-image col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
-                        <img src="theme/images/resource/about.jpg" alt="">
+                        <img src="assets/site/images/sobre.jpg" alt="Sobre mim">
                     </div>
                 </div>
             </div>
@@ -107,7 +106,7 @@
     <section class="project-section-home">
         <div class="auto-container">
             <div class="sec-title style-two centered">
-                <h2>Our <span>Projects</span></h2>
+                <h2>Meus <span>Projetos</span></h2>
                 <div class="separator"></div>
             </div>
             <div class="projects-carousel owl-carousel owl-theme">
@@ -163,7 +162,7 @@
         </div>
         <br>
         <div class="text-center">
-            <a href="projects.html" class="theme-btn btn-style-one">more projects</a>
+            <a href="projects.html" class="theme-btn btn-style-one">Todos projetos</a>
         </div>
     </section>
     <!--End Project Section-->
@@ -219,88 +218,9 @@
         </div>
     </section>
     <!--End Services Section Two-->
-    
-    <!--Counter Section-->
-    <div class="counter-section">
-        <div class="auto-container">
-            <div class="sec-title centered">
-                <h2>Interesting Facts</h2>
-                <div class="sub-title">A summary of our challenges translated into numbers</div>
-                <div class="separator">
-                    <span class="dott"></span>
-                    <span class="dott"></span>
-                    <span class="dott"></span>
-                </div>
-            </div>
-        </div>
-        <div class="fact-section" style="background-image:url(images/background/2.jpg)">
-            <div class="auto-container">
-                <div class="row clearfix">
-                    <!--Title Column-->
-                    <div class="title-column col-md-6 col-sm-12 col-xs-12">
-                        <div class="title-inner">
-                            <div class="number">15</div>
-                            <div class="text">years transforming places and creating plans that improve life</div>
-                        </div>
-                    </div>
-                    <div class="counter-column col-md-6 col-sm-12 col-xs-12">
-                        
-                        <div class="fact-counter">
-                            <div class="auto-container">
-                                <div class="row clearfix">
-                                
-                                    <!--Column-->
-                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner">
-                                            <div class="count-outer count-box">
-                                                <span class="count-text" data-speed="2000" data-stop="220">0</span>
-                                            </div>
-                                            <h4 class="counter-title">Certified Engineers</h4>
-                                        </div>
-                                    </div>
-                            
-                                    <!--Column-->
-                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner">
-                                            <div class="count-outer count-box">
-                                                <span class="count-text" data-speed="2000" data-stop="180">0</span>
-                                            </div>
-                                            <h4 class="counter-title">Happy Clients</h4>
-                                        </div>
-                                    </div>
-                            
-                                    <!--Column-->
-                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner">
-                                            <div class="count-outer count-box">
-                                                <span class="count-text" data-speed="2000" data-stop="600">0</span>
-                                            </div>
-                                            <h4 class="counter-title">Awards Won</h4>
-                                        </div>
-                                    </div>
-                            
-                                    <!--Column-->
-                                    <div class="column counter-column col-md-6 col-sm-6 col-xs-12">
-                                        <div class="inner">
-                                            <div class="count-outer count-box">
-                                                <span class="count-text" data-speed="2000" data-stop="260">0</span>
-                                            </div>
-                                            <h4 class="counter-title">Projects Done</h4>
-                                        </div>
-                                    </div>
-                                    
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!--End Counter Section-->
 
     <!--News Section-->
-    <section class="news-section">
+    <section class="news-section" style="margin-top:50px">
         <div class="auto-container">
             <!--Sec Title-->
             <div class="sec-title centered">
