@@ -82,7 +82,7 @@
 
         <!-- Botão de Submissão -->
         <div class="text-right">
-            <button type="submit" class="btn btn-primary">Cadastrar</button>
+            <button type="submit" class="btn btn-primary">Salvar</button>
         </div>
     </form>
 

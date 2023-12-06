@@ -110,59 +110,21 @@
                 <div class="separator"></div>
             </div>
             <div class="projects-carousel owl-carousel owl-theme">
+                @foreach ($projetos as $projeto)
                 <div class="item">
-                    <div><img src="theme/images/resource/project-1.jpg" alt=""></div>
+                    <div><img src="{{$projeto->img_default}}" alt="{{$projeto->title}}"></div>
                     <div class="info">
-                        <h3><a href="project-single.html">Aqua Residence</a></h3>
-                        <h4><a href="project-single.html">Architecture</a></h4>
+                        <h3><a href="project-single.html">{{$projeto->title}}</a></h3>
+                        <h4><a href="project-single.html">{{$projeto->resume}}</a></h4>
                         <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
                     </div>
                 </div>
-                <div class="item">
-                    <div><img src="theme/images/resource/project-2.jpg" alt=""></div>
-                    <div class="info">
-                        <h3><a href="project-single.html">Box Perspective</a></h3>
-                        <h4><a href="project-single.html">Engineering</a></h4>
-                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div><img src="theme/images/resource/project-3.jpg" alt=""></div>
-                    <div class="info">
-                        <h3><a href="project-single.html">Bricks High</a></h3>
-                        <h4><a href="project-single.html">Consulting</a></h4>
-                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div><img src="theme/images/resource/project-4.jpg" alt=""></div>
-                    <div class="info">
-                        <h3><a href="project-single.html">Rustic Nature</a></h3>
-                        <h4><a href="project-single.html">Interior</a></h4>
-                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div><img src="theme/images/resource/project-5.jpg" alt=""></div>
-                    <div class="info">
-                        <h3><a href="project-single.html">Pool Party</a></h3>
-                        <h4><a href="project-single.html">Construction</a></h4>
-                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="item">
-                    <div><img src="theme/images/resource/project-6.jpg" alt=""></div>
-                    <div class="info">
-                        <h3><a href="project-single.html">Bar Concept</a></h3>
-                        <h4><a href="project-single.html">Interior</a></h4>
-                        <a href="project-single.html"><i class="fas fa-arrow-right"></i></a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
         <br>
         <div class="text-center">
-            <a href="projects.html" class="theme-btn btn-style-one">Todos projetos</a>
+            <a href="/projetos" class="theme-btn btn-style-one">Todos projetos</a>
         </div>
     </section>
     <!--End Project Section-->
@@ -173,7 +135,7 @@
         <div class="auto-container">
             <!--Sec Title-->
             <div class="sec-title light centered">
-                <h2>Our Services</h2>
+                <h2>Serviços</h2>
                 <div class="sub-title">a force for activating cities and reenergizing cultures</div>
                 <div class="separator"></div>
             </div>
@@ -297,28 +259,4 @@
         </div>
     </section>
     <!--End News Section-->
-
-    <!--Testimonial Section-->
-    <section class="clients-section  grey-bg">
-        <div class="auto-container">
-            <div class="title-box">
-                <div class="title">Our work is defined by so much more than just recognition</div>
-                <h2>Trusted by hundreds of clients around the country</h2>
-                <div class="separator"></div>
-            </div>
-            
-            <div class="sponsors-outer">
-                <!--Sponsors Carousel-->
-                <ul class="sponsors-carousel owl-carousel owl-theme">
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/1.jpg" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/2.jpg" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/3.jpg" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/4.jpg" alt=""></a></figure></li>
-                    <li class="slide-item"><figure class="image-box"><a href="#"><img src="theme/images/clients/5.jpg" alt=""></a></figure></li>
-                </ul>
-
-            </div>
-        </div>
-    </section>
-    <!--End Testimonial Section-->
 @endsection

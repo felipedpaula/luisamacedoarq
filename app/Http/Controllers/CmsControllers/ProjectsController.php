@@ -48,7 +48,7 @@ class ProjectsController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'resume' => ['required', 'string'],
             'body' => ['required', 'string'],
-            'url_link' => ['string'],
+            'url_link' => ['nullable', 'string'],
             'status' => ['required', 'in:0,1'],
         ];
 
@@ -115,7 +115,7 @@ class ProjectsController extends Controller
             'title' => ['required', 'string', 'max:255'],
             'resume' => ['required', 'string'],
             'body' => ['required', 'string'],
-            'url_link' => ['string'],
+            'url_link' => ['nullable', 'string'],
             'status' => ['required', 'in:0,1'],
         ];
 
