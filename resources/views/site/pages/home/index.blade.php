@@ -9,7 +9,7 @@
                     @foreach ($destaques as $destaque)
                     <li data-description="Slide Description" data-easein="default" data-easeout="default" data-fsmasterspeed="1500" data-fsslotamount="7" data-fstransition="fade" data-hideafterloop="0" data-hideslideonmobile="off" data-index="rs-1687" data-masterspeed="default" data-param1="" data-param10="" data-param2="" data-param3="" data-param4="" data-param5="" data-param6="" data-param7="" data-param8="" data-param9="" data-rotate="0" data-saveperformance="off" data-slotamount="default" data-thumb="{{$destaque->img_src}}" data-title="Slide Title" data-transition="parallaxvertical">
                         <img alt="{{$destaque->title}}" class="rev-slidebg" data-bgfit="cover" data-bgparallax="10" data-bgposition="center center" data-bgrepeat="no-repeat" data-no-retina="" src="{{$destaque->img_src}}"> 
-                        <div style="position:relative;width:100%;height:100%;background:linear-gradient(90deg, #eae1db 0%, #eae1db 20%, #eae1db00 100%);" class="bg-slider"></div>
+                        <div style="position:relative;width:100%;height:100%;background:linear-gradient(90deg, #384835 0%, #384835 20%, #eae1db00 100%);" class="bg-slider"></div>
                         <div class="tp-caption" 
                             data-paddingbottom="[0,0,0,0]"
                             data-paddingleft="[0,0,0,0]"
@@ -26,7 +26,7 @@
                             data-y="['middle','middle','middle','middle']"
                             data-textalign="['top','top','top','top']"
                             data-frames='[{"from":"y:[100%];z:0;rX:0deg;rY:0;rZ:0;sX:1;sY:1;skX:0;skY:0;","mask":"x:0px;y:0px;s:inherit;e:inherit;","speed":1500,"to":"o:1;","delay":1000,"ease":"Power3.easeInOut"},{"delay":"wait","speed":1000,"to":"auto:auto;","mask":"x:0;y:0;s:inherit;e:inherit;","ease":"Power3.easeInOut"}]'>
-                            <h2 style="color:#293C27;font-weight:800">{{$destaque->title}}</h2>
+                            <h2 style="color:#D6C9B3;font-weight:800">{{$destaque->title}}</h2>
                         </div>
 
                         <div class="tp-caption" 
@@ -84,11 +84,16 @@
                     <div class="inner-column">
                         <div class="sec-title style-two">
                             <div class="sub-title">A paixão e a visão por trás dos projetos arquitetônicos.</div>
-                            <h2>Sobre <span>mim</span></h2>
+                            <h2>Sobre <span>nós</span></h2>
                             <div class="separator"></div>
                         </div>
                         <div class="text">
-                            <p>Olá! Sou Luísa Macêdo, arquiteta formada pela renomada PUC-GO e atualmente atuando no coração de Goiânia. Acredito que cada espaço deve refletir não só uma estética naturalista, mas também a essência e personalidade de quem o habita. Em cada projeto, busco criar ambientes que contem histórias, se conectem com a natureza e celebrem a individualidade dos meus clientes. Seja bem-vindo ao meu universo arquitetônico.</p>
+                            <p>Somos um escritório reconhecido por respeitar o estilo do cliente, onde não impomos algo que não faça sentido, com projetos criativos e funcionais.</p>
+                            <p>A percepção empática e sensível com a boa comunicação e relacionamento entre equipe, clientes, prestadores, fornecedores resgata o que sempre fez parte do nosso vocabulário: personalidade, lado humano, criatividade, espontaneidade e pensamento positivo.</p>
+                            <p>Sempre estaremos abertos para pessoas que buscam conexão com os espaços, pertencimento.</p>
+                            <p>Nos desafiamos a cada cliente, a cada sonho. Chegar em um final de obra e questionar o cliente se ele está diante do sonho dele e a resposta for SIM, é que o objetivo foi alcançado.</p>
+                            <p>Nunca foi e nunca será, sobre uma simples entrega.</p>
+                            <p>Criamos espaços com criatividade para refletir o SEU estilo de habitar.</p>
                         </div>
                     </div>
                 </div>
@@ -106,8 +111,12 @@
     <section class="project-section-home">
         <div class="auto-container">
             <div class="sec-title style-two centered">
-                <h2>Meus <span>Projetos</span></h2>
+                <h2>Nossos <span>Projetos</span></h2>
                 <div class="separator"></div>
+                <div class="text">
+                    <p>A taxa de conversão da execução fidedigna dos nossos projetos é de 90%, temos esse resultado por alguns fatores.</p>
+                    <p>Nossos projetos são EXECUTAVEIS, por isso temos TANTOS resultados fidedignos ao que foi pensado em projeto! por estarmos MUITO bem alinhados com os desejos dos clientes como também quanto ao orçamento.</p>
+                </div>
             </div>
             <div class="projects-carousel owl-carousel owl-theme">
                 @foreach ($projetos as $projeto)
@@ -132,51 +141,87 @@
     <!--Services Section Two-->
     <section class="services-section-two" style="background-image:url(images/background/1.jpg)">
         <div class="section-inner">
-        <div class="auto-container">
-            <!--Sec Title-->
-            <div class="sec-title light centered">
-                <h2>Serviços</h2>
-                <div class="sub-title">a force for activating cities and reenergizing cultures</div>
-                <div class="separator"></div>
+            <div class="auto-container">
+                <!--Sec Title-->
+                <div class="sec-title light centered">
+                    <h2>Serviços</h2>
+                    <div class="sub-title">Conheça todos os tipos de serviço que posso fazer por você.</div>
+                    <div class="separator"></div>
+                </div>
+                <div class="row clearfix">
+                    <!-- 1 -->
+                    <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <img src="theme/images/services/icon-1.svg" alt="">
+                            </div>
+                            <h3><a href="services-single.html">Projeto Residencial e Comercial</a></h3>
+                            <div class="text">Transformamos suas ideias em realidade, criando espaços residenciais e comerciais que são tão funcionais quanto esteticamente agradáveis.</div>
+                            <a class="read-more" href="services-single.html">saber mais <span class="icon fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 2 -->
+                    <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <img src="theme/images/services/icon-5.svg" alt="">
+                            </div>
+                            <h3><a href="services-single.html">Design de Interiores e Otimização de Espaços</a></h3>
+                            <div class="text">Vamos reinventar seu espaço, maximizando sua eficiência e beleza, refletindo seu estilo pessoal em cada detalhe.</div>
+                            <a class="read-more" href="services-single.html">saber mais <span class="icon fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 3 -->
+                    <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <img src="theme/images/services/icon-4.svg" alt="">
+                            </div>
+                            <h3><a href="services-single.html">Arquitetura Remota e Serviços Online</a></h3>
+                            <div class="text">Oferecemos consultoria e design arquitetônico personalizados, acessíveis de qualquer lugar, a qualquer hora, com a mesma qualidade e atenção aos detalhes.</div>
+                            <a class="read-more" href="services-single.html">saber mais <span class="icon fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div>
+
+                    <!-- 4 -->
+                    <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <img src="theme/images/services/icon-6.svg" alt="">
+                            </div>
+                            <h3><a href="services-single.html">Consultoria para Reformas e Modernização</a></h3>
+                            <div class="text">Nossa expertise transforma e atualiza seu espaço, mesclando as últimas tendências com soluções práticas para uma renovação impactante.</div>
+                            <a class="read-more" href="services-single.html">saber mais <span class="icon fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 5 -->
+                    <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <img src="theme/images/services/icon-2.svg" alt="">
+                            </div>
+                            <h3><a href="services-single.html">Desenvolvimento de Projetos para Construção</a></h3>
+                            <div class="text">Da concepção à construção, nosso foco é desenvolver projetos que realizem seus sonhos de construção, garantindo qualidade e sustentabilidade.</div>
+                            <a class="read-more" href="services-single.html">saber mais <span class="icon fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                    
+                    <!-- 6 -->
+                    <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
+                        <div class="inner-box">
+                            <div class="icon-box">
+                                <img src="theme/images/services/icon-3.svg" alt="">
+                            </div>
+                            <h3><a href="services-single.html">Integração de Arquitetura e Engenharia Civil</a></h3>
+                            <div class="text">Unimos estética arquitetônica e precisão de engenharia para criar não apenas construções belas, mas também estruturalmente excelentes e eficientes.</div>
+                            <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="row clearfix">
-                <!--Services Block Two-->
-                <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <img src="theme/images/services/icon-1.svg" alt="">
-                        </div>
-                        <h3><a href="services-single.html">Architecture</a></h3>
-                        <div class="text">Provides an opportunity to not only add beauty and structure to the world, but to profoundly improve the conditions for people.</div>
-                        <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
-                    </div>
-                </div>
-                
-                <!--Services Block Two-->
-                <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <img src="theme/images/services/icon-2.svg" alt="">
-                        </div>
-                        <h3><a href="services-single.html">Consulting & Planning</a></h3>
-                        <div class="text">Our team’s analytical tools and user engagement activities inspire creativity and collaboration that enhance any project.</div>
-                        <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
-                    </div>
-                </div>
-                
-                <!--Services Block Two-->
-                <div class="services-block-two col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <div class="icon-box">
-                            <img src="theme/images/services/icon-3.svg" alt="">
-                        </div>
-                        <h3><a href="services-single.html">Construction</a></h3>
-                        <div class="text">Across our firm, we employ a diverse range of professionals with a successful record delivering high-quality projects.</div>
-                        <a class="read-more" href="services-single.html">read more <span class="icon fa fa-angle-double-right"></span></a>
-                    </div>
-                </div>
-            </div>
-        </div>
         </div>
     </section>
     <!--End Services Section Two-->

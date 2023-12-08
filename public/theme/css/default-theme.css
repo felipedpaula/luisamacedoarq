@@ -141,8 +141,8 @@ a,
 @media only screen and (max-width: 767px){
 	
 	.main-menu .navbar-header .navbar-toggle{
-		border-color:#232323;
-		background-color:#232323 !important;
+		border-color:#D6C9B3;
+		background-color:#D6C9B3 !important;
 	}
 	
 	.main-menu .navbar-header .navbar-toggle,
@@ -161,7 +161,7 @@ a,
 	.main-menu .navbar-collapse > .navigation > li.current > a,
 	.main-menu .navbar-collapse > .navigation > li.current-menu-item > a,
 	.header-style-two.inner-header .main-menu .navigation > li > a{
-		background-color:#232323;
+		background-color:#293C27;
 	}
 	
 	.main-menu .navigation > li.home .fa,
