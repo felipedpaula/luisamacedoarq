@@ -27,6 +27,7 @@ class HomeController extends Controller
         $this->dadosPagina['destaques'] = $this->destaques->getDestaques('slider-home', 3);
         $this->dadosPagina['posts'] = $this->posts->getConteudosHome();
         $this->dadosPagina['projetos'] = $this->projetos->getProjetosHome();
+        $this->dadosPagina['posts'] = $this->posts->getConteudosHome();
 
         return view('site.pages.home.index', $this->dadosPagina);
     }

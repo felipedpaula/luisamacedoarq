@@ -231,75 +231,33 @@
         <div class="auto-container">
             <!--Sec Title-->
             <div class="sec-title centered">
-                <h2>Latest News</h2>
-                <div class="sub-title">Learn more about design tips and construction trends</div>
+                <h2>Últimas Notícias</h2>
+                <div class="sub-title">Saiba mais sobre dicas de design e tendências na arquitetura</div>
                 <div class="separator"></div>
             </div>
             <div class="row clearfix">
-
                 <!--News Block-->
+                @foreach ($posts as $post)
                 <div class="news-block col-md-4 col-sm-6 col-xs-12">
                     <div class="inner-box">
-                        <a href="blog-single.html">
+                        <a href="/blog/{{$post->slug}}">
                             <div class="image">
-                                <img src="theme/images/resource/news-thumb-1.jpg" alt="" />
+                                <img src="{{$post->img_default}}" alt="{{$post->title}}" />
                             </div>
                         </a>
                         <div class="lower-box">
                             <div class="post-date"><i class="far fa-calendar-alt"></i> March 29, 2021</div>
-                            <h3><a href="blog-single.html">Everything You Need to Know About Minimalist Design</a></h3>
-                            <div class="text">Clean lines, reductive, uncluttered, monochromatic, simplicity, "less is more" these are some of the terms and concepts.</div>
+                            <h3><a href="/blog/{{$post->slug}}">{{$post->title}}</a></h3>
+                            <div class="text">{{$post->resume}}</div>
                             <div class="clearfix">
                                 <div class="pull-left">
-                                    <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
+                                    <a href="/blog/{{$post->slug}}" class="read-more">Ler mais <span class="fa fa-angle-right"></span></a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <a href="blog-single.html">
-                            <div class="image">
-                                <img src="theme/images/resource/news-thumb-2.jpg" alt="" />
-                            </div>
-                        </a>
-                        <div class="lower-box">
-                            <div class="post-date"><i class="far fa-calendar-alt"></i> March 22, 2021</div>
-                            <h3><a href="blog-single.html">Organizing Ideas To Give Your Office The Ultimate Upgrade</a></h3>
-                            <div class="text">Home offices are all the rage right now. Yours could be the headquarters for a small business, questionably relevant papers, or homework central.</div>
-                            <div class="clearfix">
-                                <div class="pull-left">
-                                    <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!--News Block-->
-                <div class="news-block col-md-4 col-sm-6 col-xs-12">
-                    <div class="inner-box">
-                        <a href="blog-single.html">
-                            <div class="image">
-                                <img src="theme/images/resource/news-thumb-3.jpg" alt="" />
-                            </div>
-                        </a>
-                        <div class="lower-box">
-                            <div class="post-date"><i class="far fa-calendar-alt"></i> March 15, 2021</div>
-                            <h3><a href="blog-single.html">How to Decorate Your Kitchen with Subway Tiles</a></h3>
-                            <div class="text">It doesn't matter what your design aesthetic is or how much space you have, one thing's for sure: Subway tiles are a failsafe.</div>
-                            <div class="clearfix">
-                                <div class="pull-left">
-                                    <a href="blog-single.html" class="read-more">Read More <span class="fa fa-angle-right"></span></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </section>

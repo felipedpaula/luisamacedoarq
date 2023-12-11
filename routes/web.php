@@ -16,6 +16,9 @@ use App\Http\Controllers\CmsControllers\ProjectsController;
 use App\Http\Controllers\CmsControllers\ContatoController as ContatoCMSController;
 
 use App\Http\Controllers\SiteControllers\HomeController;
+use App\Http\Controllers\SiteControllers\ContentController as ConteudoSiteController;
+use App\Http\Controllers\SiteControllers\ServicesController as ServicesSiteController;
+use App\Http\Controllers\SiteControllers\ProjectsController as ProjectsSiteController;
 
 Auth::routes();
 
@@ -28,6 +31,17 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/contato', [ContatoController::class, 'index'])->name('contato');
 Route::post('/contato/send-message', [ContatoController::class, 'sendMessage'])->name('sendmsg');
 
+// BLOG
+Route::get('/blog', [ConteudoSiteController::class, 'index'])->name('blog.index');
+Route::get('/blog/{slug}', [ConteudoSiteController::class, 'single'])->name('blog.single');
+
+// SERVICOS
+Route::get('/servicos', [ServicesSiteController::class, 'index'])->name('services.index');
+Route::get('/servicos/{id}', [ServicesSiteController::class, 'single'])->name('service.single');
+
+// PROJETOS
+Route::get('/projetos', [ProjectsSiteController::class, 'index'])->name('projetos.index');
+Route::get('/projetos/{id}', [ProjectsSiteController::class, 'single'])->name('projeto.single');
 
 // Rotas CMS ################################################################
 // --------------------------------------------------------------------------
