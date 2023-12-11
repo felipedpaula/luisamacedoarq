@@ -2330,7 +2330,7 @@ img{
 }
 
 .gallery-block .item .info i:hover {
-	color: #e98135;
+	color: #384835;
 }
 
 .gallery-block.mix,
@@ -2796,7 +2796,7 @@ position: absolute;
 
 .news-block .inner-box .lower-box{
 	position: relative;
-	border-top: 3px solid #e98135;
+	border-top: 3px solid #384835;
 	margin: -35px auto 0;
 	padding: 25px 30px;
 	background: #fff;
@@ -3133,8 +3133,6 @@ position: absolute;
 .call-to-action{
 	position:relative;
 	padding:50px 0px;
-	background: url(../images/background/texture-4.jpg);
-	background-color:#c8b499;
 }
 
 .call-to-action .text{
@@ -3333,7 +3331,7 @@ position: absolute;
 }
 
 .main-footer .post-widget .post-block .inner h3 a:hover{
-	color:#c8b499;
+	color:#384835;
 }
 
 .main-footer .post-widget .post-block .inner .post-date{
@@ -4945,7 +4943,7 @@ position: absolute;
 
 .news-block-four .inner-box .lower-box{
 	position: relative;
-	border-top: 3px solid #e98135;
+	border-top: 3px solid #384835;
 	margin: -35px auto 0;
 	padding: 30px 40px;
 	background: #fff;
@@ -5732,7 +5730,7 @@ position: relative;
 	margin-bottom: 20px;
 	font-size: 26px;
 	font-weight: 600;
-	border-bottom: 2px solid #e98135;
+	border-bottom: 2px solid #384835;
 	padding-bottom: 10px;
 }
 
@@ -5904,7 +5902,7 @@ position: relative;
 }
 
 .project-single-slider .owl-nav [class*=owl-] {
-	background: rgba(233,129,53,0.4) !important;
+	background: #D6C9B3 !important;
 	color: #ffffff !important;
 	width: 50px;
 	height: 50px;
@@ -5920,7 +5918,7 @@ position: relative;
 }
 
 .project-single-slider .owl-nav [class*=owl-]:hover {
-	background: #e98135 !important;
+	background: #384835 !important;
 }
 
 /*** 
