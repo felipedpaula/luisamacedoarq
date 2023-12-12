@@ -43,6 +43,11 @@ Route::get('/servicos/{id}', [ServicesSiteController::class, 'single'])->name('s
 Route::get('/projetos', [ProjectsSiteController::class, 'index'])->name('projetos.index');
 Route::get('/projetos/{id}', [ProjectsSiteController::class, 'single'])->name('projeto.single');
 
+// SOBRE
+Route::get('/sobre', function(){
+    return view('site.pages.sobre.index');
+})->name('projetos.index');
+
 // Rotas CMS ################################################################
 // --------------------------------------------------------------------------
 Route::middleware(['auth'])->group(function () {

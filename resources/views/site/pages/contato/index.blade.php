@@ -1,6 +1,18 @@
 @extends('site.layouts.site-default')
 
 @section('content')
+    <!--Page Title-->
+    <section class="page-title" style="background-image:url({{asset('assets/site/images/bg-header.jpg')}}); margin-bottom:50px">
+        <div class="auto-container">
+            <h1>Contato</h1>
+            <ul class="bread-crumb clearfix">
+                <li><a href="/">Home</a></li>
+                <li class="active">Contato</li>
+            </ul>
+        </div>
+    </section>
+    <!--End Page Title-->
+
     <section class="contact_form_section my-5">
         <div class="container">
             <div class="row">
