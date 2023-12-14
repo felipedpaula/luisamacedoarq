@@ -93,6 +93,7 @@ class ProjectsController extends Controller
     
         $this->dadosPagina = [
             'project' => $project,
+            'imagens' => $this->imgProjeto->getImagesByProjectId($idProject),
             'tituloPagina' => 'Editar Projeto: '.$project->title
         ];
     
@@ -157,6 +158,58 @@ class ProjectsController extends Controller
         }
     }
     
+    public function add(Request $request) {
 
+        $idProjeto = $request->id;
+
+        $data = $request->only([
+            'title',
+            'imagem',
+        ]);
+
+        $rules = [
+            'title' => ['required', 'string', 'max:255'],
+            'imagem' => ['nullable','file', 'mimes:jpg,png,webp'],
+        ];
+
+        $validator = Validator::make($data, $rules);
+
+        if ($validator->fails()) {
+            return redirect()->route('admin.project.edit', ['id' => $idProjeto])
+                ->withErrors($validator)
+                ->withInput();
+        }
+
+        try {
+            $this->imgProjeto->project_id = $idProjeto;
+            $this->imgProjeto->title_img = $data['title'];
+            $this->imgProjeto->description_img = $data['title'];
+            if ($request->hasFile('imagem') && $request->file('imagem')->isValid()) {
+                $img_default = $request->file('imagem')->store('public/images');
+                $url = asset(Storage::url($img_default));
+                $this->imgProjeto->src_img = $url;
+            }
+            $this->imgProjeto->save();
+            return redirect()->route('admin.project.edit', ['id' => $idProjeto])->with('success', 'project atualizada com sucesso!');
+        } catch (\Exception $e) {
+            return redirect()->route('admin.project.edit', ['id' => $idProjeto])
+                ->with('error', 'Ocorreu um erro ao atualizar a project. Por favor, tente novamente.');
+        }
+    }
+
+    public function remove(Request $request) {
+        $idImagem = $request->id_foto;
+        $idProjeto = $request->id;
+        $imagem = ImageProjects::find($idImagem);
+        if (!$imagem) {
+            return redirect()->route('admin.project.edit', ['id' => $idProjeto])->with('error', 'Imagem não encontrada.');
+        }
+        try {
+            $imagem->delete();
+            return redirect()->route('admin.project.edit', ['id' => $idProjeto])->with('success', 'Imagem excluída com sucesso.');
+        } catch (\Exception $e) {
+            return redirect()->route('admin.project.edit', ['id' => $idProjeto])->with('error', 'Erro ao tentar excluir a imagem.');
+        }
+    }
     
 }

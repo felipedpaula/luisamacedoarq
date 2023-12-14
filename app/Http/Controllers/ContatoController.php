@@ -21,7 +21,7 @@ class ContatoController extends Controller
             'email' => 'nullable|email',
             'tel' => 'nullable',
             'message' => 'required',
-            'type' => 'required'
+            // 'type' => 'required'
         ]);
 
         try {

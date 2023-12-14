@@ -14,105 +14,92 @@
     <!--End Page Title-->
 
     <section class="contact_form_section my-5">
-        <div class="container">
+        <div class="container" style="margin-bottom:50px">
             <div class="row">
-                <div class="col-lg-8 col-md-7">
-                    <h3 class="cfs_heading">Entre em contato</h3>
-                    <div class="contact_form">
-                        <form method="post" action="{{ route('sendmsg') }}">
-                            @csrf
+                @if(session('success'))
+                    <div class="alert alert-success">
+                        {{ session('success') }}
+                    </div>
+                @endif
 
-                            @if(session('success'))
-                                <div class="alert alert-success">
-                                    {{ session('success') }}
-                                </div>
-                            @endif
+                @if ($errors->any())
+                    <div class="alert alert-danger">
+                        <ul>
+                            @foreach ($errors->all() as $error)
+                                <li>{{ $error }}</li>
+                            @endforeach
+                        </ul>
+                    </div>
+                @endif
 
-                            @if ($errors->any())
-                                <div class="alert alert-danger">
-                                    <ul>
-                                        @foreach ($errors->all() as $error)
-                                            <li>{{ $error }}</li>
-                                        @endforeach
-                                    </ul>
-                                </div>
-                            @endif
+                <div class="form-title" style="margin-bottom:50px">
+                    <h2 style="color:#293C27">Formulário para contato</h2>
+                    <div class="separator"></div>
+                    <div class="text">Gostaríamos de contribuir no projeto que você está pensando. Por favor, deixe-nos uma mensagem para entrarmos em contato.</div>
+                </div>
 
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <input class="required" type="text" name="name" placeholder="Seu Nome"/>
+                <!--Form Column-->
+                <div class="form-column col-md-7 col-sm-12 col-xs-12">
+                    <div class="column-inner">
+                    
+                        <!-- Contact Form -->
+                        <div class="contact-form">
+                            <form action="{{route('sendmsg')}}" method="post">
+                                @csrf
+                                <div class="row">
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="name" placeholder="Seu nome" required value="{{old('name')}}">
+                                    </div>
+    
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="email" name="email" placeholder="Seu email" required value="{{old('email')}}">
+                                    </div>
+                                    
+                                    <div class="col-md-6 col-sm-6 col-xs-12 form-group">
+                                        <input type="text" name="tel" placeholder="Seu telefone" required value="{{old('tel')}}">
+                                    </div>
+    
+                                    <div class=" col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <textarea name="message" placeholder="Mensagem">{{old('message')}}</textarea>
+                                    </div>
+    
+                                    <div class="col-md-12 col-sm-12 col-xs-12 form-group">
+                                        <button class="theme-btn btn-style-one" type="submit" name="submit-form">Enviar</button>
+                                    </div>
                                 </div>
-                                <div class="col-lg-12">
-                                    <input class="required" type="email" name="email" placeholder="Seu Email"/>
-                                </div>
-                                <div class="col-lg-12">
-                                    <input class="required" type="text" name="tel" placeholder="Seu Telefone"/>
-                                </div>
-                                <div class="col-lg-12">
-                                    <select name="type" id="type">
-                                        <option value="Contato">Contato</option>
-                                        <option value="Comentário">Comentário</option>
-                                        <option value="Reclamação">Reclamação</option>
-                                        <option value="Sugestão">Sugestão</option>
-                                        <option value="Elogio">Elogio</option>
-                                    </select>
-                                </div>
-                                <div class="col-lg-12">
-                                    <textarea class="required" name="message" placeholder="Escreva a mensagem"></textarea>
-                                </div>
-                                <div class="col-lg-12">
-                                    <input type="submit" name="con_submit" value="Enviar"/>
-                                </div>
-                            </div>
-                        </form>
+                            </form>
+                        </div>
+                        <!--End Contact Form -->
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-5 pdt59">
-                    <div class="contact_info">
-                        <img src="theme/assets/images/icons/4.png" alt=""/>
-                        <p>
-                            20 Broklyn Street, New Town
-                            New York, United States
-                        </p>
-                    </div>
-                    <div class="contact_info">
-                        <img src="theme/assets/images/icons/5.png" alt=""/>
-                        <p>
-                            <a href="mailto:infoyour@mail.com">infoyour@mail.com</a><br/>
-                            666 888 0000
-                        </p>
-                    </div>
-                    <div class="contact_info">
-                        <img src="theme/assets/images/icons/6.png" alt=""/>
-                        <p>
-                            Web Address:<br/>
-                            <a href="http://themewar.com">yourwebsite.com</a>
-                        </p>
-                    </div>
+					
+                <!--Info Column-->
+                <div class="info-column col-md-5 col-sm-12 col-xs-12" style="padding:30px;background:url({{asset('theme/images/background/texture-1.jpg')}})">
+                    <ul class="list-style-two">
+                        <li>
+                            <span class="icon flaticon-symbol"></span>
+                            <div class="info-featured">luisamacedo.arqurb@gmail.com</div>
+                        </li>
+                        <li>
+                            <span class="icon flaticon-smartphone"></span>
+                            <div class="info-featured">(62) 99930-1302</div>
+                        </li>
+                        <li>
+                            <span class="icon flaticon-placeholder"></span>
+                            <div class="text-info">Localização</div>
+                            <h3>Qualquer lugar no mundo!</h3>
+                        </li>
+                        
+                        <li>
+                            <span class="icon flaticon-clock-1"></span>
+                            <div class="text-info">Atendimento</div>
+                            <h3>Segunda - Sexta<br>08:00 às 18:00</h3>
+                        </li>
+                    </ul>
+                    
                 </div>
             </div>
         </div>
     </section>
     <!-- Contact Page Section End -->
-
-    <!-- Subscribe Section Start -->
-    <section class="subscribe_section">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-3 col-md-4 noPaddingRight">
-                    <h2>NewsLetter</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    </p>
-                </div>
-                <div class="col-lg-6 col-md-8 offset-lg-3">
-                    <form method="post" action="#" class="subscribe_form">
-                        <input type="email" name="sub_email" placeholder="Enter your email">
-                        <button type="submit">Message Us</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- Subscribe Section End -->
 @endsection

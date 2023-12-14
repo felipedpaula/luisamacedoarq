@@ -99,7 +99,7 @@
                 </div>
                 <div class="about-details-image col-md-6 col-sm-12 col-xs-12">
                     <div class="image">
-                        <img src="assets/site/images/sobre.jpg" alt="Sobre mim">
+                        <img src="{{asset('assets/site/images/sobre.jpg')}}" alt="Sobre mim">
                     </div>
                 </div>
             </div>

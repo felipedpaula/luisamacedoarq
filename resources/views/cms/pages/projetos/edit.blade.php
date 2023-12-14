@@ -80,6 +80,23 @@
             </div>
         </div>
 
+        <div class="row">
+            <label for="imagens">Imagens do Projeto:</label>
+            <div class="col-12 px-0">
+                <div class="d-flex flex-wrap">
+                    <button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#imagemModal" style="width:100px;height:100px;font-size:50px">+</button>
+                    @foreach ($imagens as $imagem)
+                    <div class="img-galeria">
+                        <img width="100px" height="100px" src="{{$imagem->src_img}}" alt="{{$imagem->title_img}}" title="{{$imagem->title_img}}">
+                        <a href="{{ route('admin.project.remove', ['id' => $project->id, 'id_foto' => $imagem->id]) }}" class="lixeira-layer" onclick="return confirm('Tem certeza que deseja excluir esta imagem?')">
+                            <i class="fa fa-trash" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                    @endforeach
+                </div>
+            </div>
+        </div>
+
         <!-- Botão de Submissão -->
         <div class="text-right">
             <button type="submit" class="btn btn-primary">Salvar</button>
@@ -103,6 +120,38 @@
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
                         <button type="submit" class="btn btn-danger">Excluir</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Adiciona Imagem -->
+    <div class="modal fade" id="imagemModal" tabindex="-1" role="dialog" aria-labelledby="imagemModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="imagemModalLabel">Adicionar Imagem</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <form action="{{ route('admin.project.add', ['id' => $project->id]) }}" method="post" enctype="multipart/form-data">
+                    @csrf
+                    {{ method_field('PUT') }}
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label for="imagemTitulo">Título</label>
+                            <input type="text" class="form-control" id="imagemTitulo" name="title" placeholder="Título da imagem">
+                        </div>
+                        <div class="form-group">
+                            <label for="imagemFile">Escolher imagem</label>
+                            <input type="file" class="form-control-file" id="imagemFile" name="imagem">
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
+                        <button type="submit" class="btn btn-primary">Salvar Imagem</button>
                     </div>
                 </form>
             </div>

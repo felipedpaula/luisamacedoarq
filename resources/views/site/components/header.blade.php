@@ -51,7 +51,7 @@
                             <li><a href="/servicos">Serviços</a></li>
                             <li class="dropdown"><a href="#">Mais +</a>
                                 <ul>
-                                    <li><a href="/portfolio">Portfólio</a></li>
+                                    <li><a href="/projetos">Portfólio/Projetos</a></li>
                                     <li><a href="/testemunhos">Testemunhos</a></li>
                                     <li><a href="/blog">Blog</a></li>
                                 </ul>
@@ -93,7 +93,7 @@
                             <li><a href="/servicos">Serviços</a></li>
                             <li class="dropdown"><a href="#">Mais +</a>
                                 <ul>
-                                    <li><a href="/portfolio">Portfólio</a></li>
+                                    <li><a href="/projetos">Portfólio/Projetos</a></li>
                                     <li><a href="/testemunhos">Testemunhos</a></li>
                                     <li><a href="/blog">Blog</a></li>
                                 </ul>

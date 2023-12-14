@@ -117,6 +117,8 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/projects/{id}/edit', [ProjectsController::class , 'edit'])->name('project.edit');
         Route::put('/projects/{id}/update', [ProjectsController::class , 'update'])->name('project.update');
         Route::delete('/projects/{id}/delete', [ProjectsController::class , 'delete'])->name('project.delete');
+        Route::put('/projects/{id}/add', [ProjectsController::class, 'add'])->name('project.add');
+        Route::get('/projects/{id}/remove/{id_foto}', [ProjectsController::class, 'remove'])->name('project.remove');
 
         // CONTATO
         Route::get('/contatos', [ContatoCMSController::class, 'index'])->name('contatos.index');

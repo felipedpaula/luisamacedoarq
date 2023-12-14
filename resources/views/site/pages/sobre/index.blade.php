@@ -90,8 +90,8 @@
 
 				<!--Sec Title-->
 				<div class="sec-title centered">
-					<h2>Meet The Experts</h2>
-					<div class="sub-title">A prism of perspectives, passions and talents</div>
+					<h2>Conheça nossos time</h2>
+					<div class="sub-title">Um prisma de perspectivas, paixões e talentos</div>
 					<div class="separator"></div>
 				</div>
 				<!--End Sec Title-->
@@ -99,17 +99,15 @@
 				<div class="row clearfix">
 
 					<!--Team Member-->
-					<div class="team-member col-md-3 col-sm-6 col-xs-12">
+					<div class="team-member col-md-4 col-sm-6 col-xs-12">
 						<div class="inner-box">
 							<div class="image">
-								<img src="images/resource/team-1.jpg" alt="">
+								<img src="{{asset('assets/site/images/sobre.jpg')}}" alt="Luísa Macêdo">
 							</div>
 							<div class="lower-box">
-								<h3><a href="#">Andrew Chadwick</a></h3>
-								<div class="designation">Director & CEO</div>
+								<h3><a href="#">Luísa Macêdo</a></h3>
+								<div class="designation">Arquiteta</div>
 								<ul class="social-icon-one">
-									<li><a href="#"><span class="fab fa-facebook"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
 									<li><a href="#"><span class="fab fa-instagram"></span></a></li>
 									<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
 								</ul>
@@ -118,7 +116,7 @@
 					</div>
 
 					<!--Team Member-->
-					<div class="team-member col-md-3 col-sm-6 col-xs-12">
+					<div class="team-member col-md-4 col-sm-6 col-xs-12">
 						<div class="inner-box">
 							<div class="image">
 								<img src="images/resource/team-2.jpg" alt="" />
@@ -137,7 +135,7 @@
 					</div>
 
 					<!--Team Member-->
-					<div class="team-member col-md-3 col-sm-6 col-xs-12">
+					<div class="team-member col-md-4 col-sm-6 col-xs-12">
 						<div class="inner-box">
 							<div class="image">
 								<img src="images/resource/team-3.jpg" alt="" />
@@ -145,25 +143,6 @@
 							<div class="lower-box">
 								<h3><a href="#">Brandon Edwards</a></h3>
 								<div class="designation">Project Manager</div>
-								<ul class="social-icon-one">
-									<li><a href="#"><span class="fab fa-facebook"></span></a></li>
-									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
-									<li><a href="#"><span class="fab fa-instagram"></span></a></li>
-									<li><a href="#"><span class="fab fa-linkedin"></span></a></li>
-								</ul>
-							</div>
-						</div>
-					</div>
-
-					<!--Team Member-->
-					<div class="team-member col-md-3 col-sm-6 col-xs-12">
-						<div class="inner-box">
-							<div class="image">
-								<img src="images/resource/team-4.jpg" alt="" />
-							</div>
-							<div class="lower-box">
-								<h3><a href="#">Miranda Houston</a></h3>
-								<div class="designation">Interior Designer</div>
 								<ul class="social-icon-one">
 									<li><a href="#"><span class="fab fa-facebook"></span></a></li>
 									<li><a href="#"><span class="fab fa-twitter"></span></a></li>
