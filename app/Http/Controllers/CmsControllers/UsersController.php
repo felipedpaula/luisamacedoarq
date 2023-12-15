@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\CmsControllers;
 
 use App\Http\Controllers\Controller;
+use App\Models\TypeUser;
 use App\Models\User;
 use Carbon\Carbon;
 use Illuminate\Support\Facades\Hash;
@@ -19,12 +20,14 @@ class UsersController extends Controller
 
     public function index() {
         $this->dadosPagina['tituloPagina'] = 'Todos os usuários';
+        $this->dadosPagina['tipos'] = TypeUser::all();
         $this->dadosPagina['usuarios'] = User::paginate(10);
         return view('cms.pages.users.index', $this->dadosPagina);
     }
 
     public function register() {
         $this->dadosPagina['tituloPagina'] = 'Registro de usuário';
+        $this->dadosPagina['tipos'] = TypeUser::all();
         return view('cms.pages.users.register', $this->dadosPagina);
     }
 
@@ -44,7 +47,7 @@ class UsersController extends Controller
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', 'unique:users,email'],
             'password' => ['required', 'string', 'min:8'],
-            'type_id' => ['required', 'integer', 'in:1,2,3'],
+            'type_id' => ['required', 'integer', 'in:1,2,3,4'],
             'cpf' => ['required', 'string', 'unique:users,cpf'],
             'birth' => ['required', 'date', 'before:today'],
             'tel' => ['required', 'string'],
@@ -113,7 +116,7 @@ class UsersController extends Controller
         $rules = [
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'email', 'max:255', 'unique:users,email,' . $user->id],
-            'type_id' => ['required', 'integer', 'in:1,2,3'],
+            'type_id' => ['required', 'integer', 'in:1,2,3,4'],
             'cpf' => ['required', 'string', 'unique:users,cpf,' . $user->id],
             'birth' => ['required', 'date', 'before:today'],
             'tel' => ['required', 'string'],

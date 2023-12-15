@@ -52,10 +52,9 @@
                 <div class="form-group">
                     <label for="tipoUsuario">Tipo de Usuário</label>
                     <select name="type_id" class="form-control" id="tipoUsuario">
-                        <option value="0">--</option>
-                        <option value="1">Root</option>
-                        <option value="2">Administrador</option>
-                        <option value="3">Assistente de Conteúdo</option>
+                        @foreach ($tipos as $tipo)
+                        <option value="{{$tipo->id}}">{{$tipo->title}}</option>
+                        @endforeach
                     </select>
                 </div>
                 <div class="form-group">

@@ -3,32 +3,6 @@
 
 <!-- Main Header-->
 <header class="main-header">
-
-    <!--Header Top-->
-    <div class="header-top">
-        <div class="auto-container">
-            <div class="clearfix">
-                <div class="top-left">
-                    <ul class="clearfix">
-                        <li>Sejam bem vindos :D</li>
-                    </ul>
-                </div>
-                <div class="top-right clearfix">
-                    <ul class="clearfix">
-                        <li>Me encontre nas redes
-                            <div class="social-links">
-                                <a target="_blank" href="https://www.instagram.com/luisamacedoarquitetura"><span class="fab fa-instagram"></span></a>
-                                <a href="mailto:luisamacedo.arqurb@gmail.com"><span class="fas fa-fw fa-mail-bulk"></span></a>
-                                <a target="_blank" href="https://wa.me/5562999301302"><span class="fab fa-whatsapp"></span></a>
-                                <a target="_blank" href="https://br.pinterest.com/luisamacedoarquitetura/"><span class="fab fa-pinterest"></span></a>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </div>
-
     <!--Header-Upper-->
     <div class="header-upper">
         <div class="auto-container clearfix responsive-flex">
@@ -56,7 +30,7 @@
                                     <li><a href="/blog">Blog</a></li>
                                 </ul>
                             </li>
-                            <li><a href="/">Área cliente</a></li>
+                            <li><a href="/login">Área cliente</a></li>
                             <li><a href="/contato">Contato</a></li>
                             <li class="btn-orcamento"><a target="_blank" href="https://docs.google.com/forms/d/e/1FAIpQLSdUfikKq3mBLl-APsJuhjKz8MHLVZ7hO0FNClpEE74eEB4YLQ/viewform">Orçamento</a></li>
                         </ul>

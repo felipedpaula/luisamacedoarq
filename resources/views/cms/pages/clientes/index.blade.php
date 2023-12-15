@@ -13,41 +13,32 @@
     @endif
     <!-- FIM ALERTAS -->
 
-    <div class="row">
-        <div class="col-md-8 px-0"></div>
-        <div class="col-md-4 text-right">
-            <a href="{{route('admin.classe.create')}}" class="btn btn-primary" type="button">+ Nova turma</a>
-        </div>
-    </div>
-
     <div class="row mt-4">
-        @if (isset($classes) && !empty($classes))
+        @if (isset($clientes) && count($clientes) > 0)
         <ul class="list-group col-12">
             <!-- Cabeçalho da Lista -->
             <li class="list-group-item">
                 <div class="row font-weight-bold flex-nowrap overflow-auto">
-                <div class="col-lg-3">Nome</div>
-                <div class="col-lg-6">Professor</div>
+                <div class="col-lg-9">Nome</div>
                 <div class="col-lg-3">Ações</div>
                 </div>
             </li>
 
-            @foreach ($classes as $classe)
+            @foreach ($clientes as $cliente)
             <!-- Item da Lista -->
             <li class="list-group-item">
             <div class="row flex-nowrap overflow-auto">
-                <div class="col-lg-3">{{$classe->title}}</div>
-                <div class="col-lg-6">{{$classe->teacher}}</div>
+                <div class="col-lg-9">{{$cliente->name}}</div>
                 <div class="col-lg-3">
-                    <a href="{{route('admin.classe.edit', ['id' => $classe->id])}}" class="btn btn-primary btn-sm">Editar</a>
+                    <a href="{{route('admin.user.edit', ['id' => $cliente->id])}}" class="btn btn-primary btn-sm">Editar</a>
                 </div>
             </div>
             </li>
             @endforeach
         </ul>
-        {{ $classes->links() }}
+        {{ $clientes->links() }}
         @else
-        <p>Não existem turmas cadastradas.</p>
+            <p>Sem clientes para visualizar.</p>
         @endif
     </div>
 @endsection

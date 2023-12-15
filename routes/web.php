@@ -13,6 +13,7 @@ use App\Http\Controllers\CmsControllers\GaleriasController;
 use App\Http\Controllers\CmsControllers\PaginaHome;
 use App\Http\Controllers\CmsControllers\ServicesController;
 use App\Http\Controllers\CmsControllers\ProjectsController;
+use App\Http\Controllers\CmsControllers\ClientesController;
 use App\Http\Controllers\CmsControllers\ContatoController as ContatoCMSController;
 
 use App\Http\Controllers\SiteControllers\HomeController;
@@ -109,6 +110,9 @@ Route::middleware(['auth'])->group(function () {
         Route::get('/servicos/{id}/edit', [ServicesController::class , 'edit'])->name('service.edit');
         Route::put('/servicos/{id}/update', [ServicesController::class , 'update'])->name('service.update');
         Route::delete('/servicos/{id}/delete', [ServicesController::class , 'delete'])->name('service.delete');
+
+        // CLIENTES
+        Route::get('/clientes', [ClientesController::class, 'index'])->name('clientes.index');
 
         // PROJETOS
         Route::get('/projects', [ProjectsController::class, 'index'])->name('projects.index');

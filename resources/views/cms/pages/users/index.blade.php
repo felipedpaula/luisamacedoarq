@@ -46,9 +46,7 @@
                 <div class="col-lg-3">{{$usuario->email}}</div>
                 <div class="col-lg-3">{{$usuario->type_id}}</div>
                 <div class="col-lg-3">
-                    @can('settings-users')
                     <a href="{{route('admin.user.edit', ['id' => $usuario->id])}}" class="btn btn-primary btn-sm">Editar</a>
-                    @endcan
                 </div>
             </div>
             </li>

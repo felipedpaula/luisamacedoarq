@@ -61,9 +61,8 @@
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Páginas Estáticas:</h6>
                 <a class="collapse-item" href="{{route('admin.paginas.home')}}">Home</a>
-                <a class="collapse-item" href="cards.html">Sobre Nós</a>
-                <a class="collapse-item" href="buttons.html">Política de Privacidade</a>
-                <a class="collapse-item" href="cards.html">Termos de Uso</a>
+                <a class="collapse-item" href="#">Política de Privacidade</a>
+                <a class="collapse-item" href="#">Termos de Uso</a>
             </div>
         </div>
     </li>
@@ -118,6 +117,13 @@
                 <a class="collapse-item" href="{{route('admin.projects.index')}}">Todos os Projetos</a>
             </div>
         </div>
+    </li>
+
+    <li class="nav-item">
+        <a class="nav-link" href="{{ route('admin.clientes.index') }}">
+            <i class="fas fa-fw fa-user"></i>
+            <span>Clientes</span>
+        </a>
     </li>
 
 
