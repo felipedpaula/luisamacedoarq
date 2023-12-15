@@ -57,5 +57,13 @@ class DatabaseSeeder extends Seeder
         DB::table('content_types')->insert([
             'title' => 'Documentação',
         ]);
+
+        DB::table('categorias_destaques')->insert([
+            'title' => 'Slider Home',
+            'slug' => 'slider-home',
+            'description' => 'slider home',
+            'img_size' => '1920x700',
+            'status' => '1'
+        ]);
     }
 }
